@@ -590,7 +590,7 @@
             <div class="resource-grid">
                 <div class="resource-item">
                     <h4>Typical Initial Assessment</h4>
-                    <p style="font-size: 0.9rem;">Expect a comprehensive 45–60 minute consultation covering history, physical assessment, and goal setting. We aim to reduce anxiety by explaining every step.</p>
+                    <p style="font-size: 0.9rem;">Expect a comprehensive 45–120 minute consultation depending on complexity covering history, physical assessment, and goal setting. We aim to reduce anxiety by explaining every step.</p>
                 </div>
                 <div class="resource-item">
                     <h4>Service Areas</h4>
@@ -604,68 +604,63 @@
         </div>
     </section>
 
-    <section id="contact" class="section-padding bg-light">
-        <div class="container">
-            <div class="contact-layout">
-                <div class="contact-info-box">
-                    <h2>Contact Us</h2>
-                    <p class="lead">Ready to discuss a referral or book an appointment?</p>
-                    
-                    <div style="margin-top: 30px;">
-                        <p><strong>Email:</strong> <a href="mailto:admin@tandemphysio.com.au" style="color: var(--accent-teal);">admin@tandemphysio.com.au</a></p>
-                        <p><strong>Phone:</strong> (02) 5550 1234</p>
-                        <p><strong>Location:</strong> Mobile Service / Western Sydney</p>
-                        <p><strong>Hours:</strong> Mon - Fri: 8:00am - 5:00pm</p>
-                    </div>
-
-                    <div style="margin-top: 30px; padding: 20px; background: #eef2f5; border-radius: var(--border-radius);">
-                        <h4 style="margin-bottom: 10px;">Emergency Note</h4>
-                        <p style="font-size: 0.9rem;">For medical emergencies, please dial 000 immediately. This form is for non-urgent enquiries only.</p>
-                    </div>
-                </div>
-
-                <div class="contact-form-box">
-                    <form onsubmit="event.preventDefault(); alert('Thank you. This is a demo form.');" style="background: var(--white); padding: 30px; border-radius: var(--border-radius); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="role">I am a...</label>
-                            <select id="role">
-                                <option>Private Patient</option>
-                                <option>Support Coordinator</option>
-                                <option>Case Manager (LTCS/iCare)</option>
-                                <option>Family Member</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" placeholder="email@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Enquiry Details</label>
-                            <textarea id="message" placeholder="Please describe the condition or referral requirements..."></textarea>
-                        </div>
-                        <button type="submit" class="btn" style="width: 100%;">Send Enquiry</button>
-                    </form>
-                </div>
-            </div>
+<section id="contact" class="section-padding" style="background-color: var(--white);">
+    <div class="container">
+        <div class="section-header">
+            <h2>Contact Us</h2>
+            <p>Secure your appointment or discuss a referral.</p>
         </div>
-    </section>
 
-    <footer>
-        <div class="container footer-flex">
-            <div>
-                <strong>TANDEM PHYSIO</strong><br>
-                <span style="font-size: 0.8rem; opacity: 0.7;">ABN: 12 345 678 901</span>
+        <div class="contact-wrapper" style="display: flex; flex-wrap: wrap; gap: 4rem; justify-content: center; text-align: center;">
+            
+            <div class="contact-item">
+                <div style="font-size: 2rem; margin-bottom: 1rem;">📞</div>
+                <h3>Call Us</h3>
+                <p style="font-size: 1.2rem; color: var(--primary-navy); font-weight: 700;">
+                    <a href="tel:0405936633" style="color: inherit; text-decoration: none;">0405 936 633</a>
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Mon - Fri: 8:00am - 5:00pm</p>
             </div>
-            <div>
-                &copy; 2025 Tandem Physio. All rights reserved.<br>
-                <span style="font-size: 0.8rem; opacity: 0.7;">Privacy Policy | Terms of Service</span>
+
+            <div class="contact-item">
+                <div style="font-size: 2rem; margin-bottom: 1rem;">✉️</div>
+                <h3>Email Enquiry</h3>
+                <p style="font-size: 1.2rem; color: var(--primary-navy); font-weight: 700;">
+                    <a href="mailto:tandemphysiosw@gmail.com" style="color: inherit; text-decoration: none;">tandemphysiosw@gmail.com</a>
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">We reply within 24 hours.</p>
             </div>
+
         </div>
-    </footer>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="mailto:tandemphysiosw@gmail.com?subject=New%20Physio%20Enquiry" class="btn" style="font-size: 1.2rem; padding: 15px 40px;">
+                Send an Email Enquiry Now
+            </a>
+            <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem;">
+                (Clicking this will open your email application)
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer style="background-color: var(--primary-navy); color: white; padding: 3rem 0; text-align: center;">
+    <div class="container">
+        <div style="margin-bottom: 1.5rem;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">TandemPhysio</h3>
+            <p style="opacity: 0.8;">Empowering movement, together.</p>
+        </div>
+        
+        <div style="margin-bottom: 2rem; opacity: 0.9;">
+            <p>0405 936 633 | tandemphysiosw@gmail.com</p>
+            <p>Western Sydney & The Hills District</p>
+        </div>
+
+        <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; font-size: 0.85rem; opacity: 0.6;">
+            <p>&copy; 2025 Tandem Physio. All rights reserved. ABN Registered.</p>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
