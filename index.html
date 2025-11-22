@@ -216,7 +216,6 @@ section {
 
         .service-card {
             background: var(--white);
-            padding: 30px;
             border: 1px solid #e0e0e0;
             border-radius: var(--border-radius);
             transition: transform 0.2s;
@@ -425,7 +424,12 @@ section {
 
     </div>
 </section>
-<section class="service-area-banner" style="background-color: var(--light-gray); padding: 3rem 0 6rem 0; border-bottom: 1px solid #e0e0e0;">
+<section class="service-area-banner" style="
+    background: linear-gradient(rgba(244, 247, 246, 0.92), rgba(244, 247, 246, 0.92)), url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1600&q=60');
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 0 6rem 0;
+    border-bottom: 1px solid #e0e0e0;">
     <div class="container">
         <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
             <h2 style="color: var(--primary-navy); font-size: 2rem; margin-bottom: 1rem;">Our Mobile Service Area</h2>
@@ -490,10 +494,13 @@ section {
                 <p style="max-width: 600px; margin: 0 auto; color: var(--text-muted);">Expertise focused on functional independence and complex care management.</p>
             </div>
             
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Neurological Rehabilitation</h3>
-                    <p>Targeted management for specific complex conditions.</p>
+<div class="services-grid">
+            
+            <div class="service-card" style="overflow: hidden;"> <img src="https://images.unsplash.com/photo-1576091160550-2187d6b16796?auto=format&fit=crop&w=800&q=80" alt="Neurology" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 2rem;"> <h3>Neurological Rehabilitation</h3>
+                    <p class="service-description">
+                        Targeted management for specific complex conditions.
+                    </p>
                     <ul class="service-list">
                         <li>MND progression monitoring</li>
                         <li>Stroke (Spasticity/relearning)</li>
@@ -501,6 +508,57 @@ section {
                         <li>Gait & Balance training</li>
                     </ul>
                 </div>
+            </div>
+
+            <div class="service-card" style="overflow: hidden;">
+                <img src="https://images.unsplash.com/photo-1584362917165-526a968579e8?auto=format&fit=crop&w=800&q=80" alt="Respiratory" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 2rem;">
+                    <h3>Respiratory Physiotherapy</h3>
+                    <p class="service-description">
+                        High-acuity care often required in neuro/MND cases.
+                    </p>
+                    <ul class="service-list">
+                        <li>MND respiratory decline patterns</li>
+                        <li>Cough assist & Suction techniques</li>
+                        <li>NIV coordination</li>
+                        <li>Chest clearance management</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card" style="overflow: hidden;">
+                <img src="https://images.unsplash.com/photo-1519030445190-342564372d48?auto=format&fit=crop&w=800&q=80" alt="Complex Care" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 2rem;">
+                    <h3>Complex Disability (LTCS)</h3>
+                    <p class="service-description">
+                        Long-term management of catastrophic injury.
+                    </p>
+                    <ul class="service-list">
+                        <li>Standing frame systems</li>
+                        <li>24-hour positioning & pressure care</li>
+                        <li>Equipment prescription</li>
+                        <li>Carer training & education</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card" style="overflow: hidden;">
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80" alt="Chronic Pain" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 2rem;">
+                    <h3>Chronic Pain Management</h3>
+                    <p class="service-description">
+                        Holistic, Evidence-Based Chronic Pain Management.
+                    </p>
+                    <ul class="service-list">
+                        <li>Biopsychosocial assessment</li>
+                        <li>Graded motor imagery</li>
+                        <li>Pacing & fatigue management</li>
+                        <li>Self-efficacy building</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
 
                 <div class="service-card">
                     <h3>Respiratory Physiotherapy</h3>
