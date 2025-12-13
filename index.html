@@ -563,19 +563,140 @@ section {
                 <h2>Our Team</h2>
             </div>
             
-            <div class="team-profile">
-                <div class="profile-header">
-                    <h3>Chris Burgess</h3>
-                    <span>Principal Physiotherapist</span>
-                    <p>Chris leads Tandem Physio with a focus on neurological complexity and analytical reasoning. He combines deep clinical competency with an empathetic, rapport-building approach valued by long-term clients.</p>
-                    
-<div class="credentials-box">
-    <h4>Credentials</h4>
-    <ul style="list-style: none; padding: 0;">
-        <li>• Bachelor of Physiotherapy</li>
-        <li>• Level 1 Neurological Physiotherapist Certification</li>
-        <li>• AHPRA Registered</li>
-    </ul>
+<style>
+  /* 1. Container Layout */
+  .team-profile-wrapper {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto; /* Centered with vertical spacing */
+    padding: 0 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    align-items: flex-start; /* Aligns top of image with top of text */
+  }
+
+  /* 2. Image Column */
+  .profile-photo-container {
+    flex: 0 0 300px; /* Fixed width for the image */
+  }
+
+  .profile-photo-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px; /* Professional, slight corner rounding */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle depth */
+    display: block;
+  }
+
+  /* 3. Text Layout */
+  .profile-details-container {
+    flex: 1;
+    display: flex;
+    gap: 40px;
+  }
+
+  .details-left { flex: 1; }
+  .details-right { flex: 1.5; }
+
+  /* 4. Typography & Branding */
+  .team-profile-wrapper h3 {
+    font-size: 1.6rem;
+    color: #1a3b5c; /* Navy Blue */
+    margin: 0 0 0.2rem 0;
+  }
+
+  .team-profile-wrapper .role-title {
+    color: #4CAF50; /* Clinical Green */
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    display: block;
+  }
+
+  .team-profile-wrapper h4 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #1a3b5c;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 8px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .team-profile-wrapper ul {
+    padding-left: 18px;
+    margin: 0;
+  }
+
+  .team-profile-wrapper li {
+    margin-bottom: 6px;
+  }
+
+  .competency-item {
+    margin-bottom: 12px;
+  }
+
+  /* 5. Mobile Responsiveness */
+  @media (max-width: 850px) {
+    .team-profile-wrapper {
+      flex-direction: column;
+    }
+    .profile-photo-container {
+      flex: 1;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+    .profile-details-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+</style>
+
+<div class="team-profile-wrapper">
+  
+  <div class="profile-photo-container">
+    <img src="assets/Headshot-Tandem-Physio.jpg" alt="Chris Burgess - Principal Physiotherapist, Tandem Physio">
+  </div>
+
+  <div class="profile-details-container">
+    
+    <div class="details-left">
+      <h3>Chris Burgess</h3>
+      <span class="role-title">Principal Physiotherapist</span>
+      
+      <p>Chris leads Tandem Physio with a focus on neurological complexity and analytical reasoning. He combines deep clinical competency with an empathetic, rapport-building approach valued by long-term clients.</p>
+
+      <h4>Credentials</h4>
+      <ul>
+        <li>Bachelor of Physiotherapy</li>
+        <li>Level 1 Neurological Physiotherapist Certification</li>
+        <li>AHPRA Registered</li>
+      </ul>
+    </div>
+
+    <div class="details-right">
+      <h4>Core Competencies</h4>
+      
+      <div class="competency-item">
+        <strong>MND & Neuro-Degenerative:</strong> Expert application of ALSFRS components, respiratory surveillance, and anticipation of functional decline.
+      </div>
+
+      <div class="competency-item">
+        <strong>Spasticity Management:</strong> Assessment and management of tone to prevent contractures and maintain hygiene/function.
+      </div>
+
+      <div class="competency-item">
+        <strong>Clinical Reasoning:</strong> Ability to synthesize complex medical history into clear, actionable rehabilitation plans.
+      </div>
+
+      <h4>Mission & Values</h4>
+      <p>To provide reliability, clarity, and compassion. We operate with an Ethical Practice Statement regarding dual-role management and maintain a defined service area to ensure punctuality and focus.</p>
+    </div>
+
+  </div>
 </div>
                 </div>
                 
