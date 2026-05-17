@@ -3,845 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mobile neurological and complex disability physiotherapy across Western Sydney, The Hills, Blacktown, Parramatta and Liverpool. Supporting NDIS self-managed and plan-managed participants, LTCS/iCare, DVA, Home Care Package and private clients." />
+  <meta name="description" content="Mobile neurological and complex disability physiotherapy across Western Sydney, The Hills, Blacktown, Parramatta and Liverpool. Supporting NDIS, LTCS/iCare, DVA, Home Care Package and private clients." />
   <meta name="theme-color" content="#104563" />
-
   <title>Tandem Physio | Mobile Neurological Physiotherapy Western Sydney</title>
   <link rel="canonical" href="https://tandemphysio.com.au/" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
-
+  <link rel="stylesheet" href="assets/site.css" />
   <meta property="og:title" content="Tandem Physio | Mobile Neurological Physiotherapy Western Sydney" />
-  <meta property="og:description" content="Mobile neurological and complex disability physiotherapy across Western Sydney and The Hills. Supporting NDIS self-managed and plan-managed participants, LTCS/iCare, DVA, Home Care Package and private clients." />
+  <meta property="og:description" content="Mobile neurological and complex disability physiotherapy across Western Sydney, The Hills, Blacktown, Parramatta and Liverpool. Supporting NDIS, LTCS/iCare, DVA, Home Care Package and private clients." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tandemphysio.com.au/" />
   <meta property="og:image" content="https://tandemphysio.com.au/assets/og-image.png" />
-
-  <style>
-    :root {
-      --primary-navy: #104563;
-      --primary-navy-dark: #082f45;
-      --accent-teal: #2A9D8F;
-      --accent-teal-dark: #207c72;
-      --accent-gold: #E9C46A;
-      --light-gray: #f4f7f6;
-      --mid-gray: #e3e9e7;
-      --text-dark: #1a1a1a;
-      --text-muted: #5f6f73;
-      --white: #ffffff;
-      --border-radius: 14px;
-      --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.08);
-      --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.07);
-      --max-width: 1180px;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      color: var(--text-dark);
-      background-color: var(--white);
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    section {
-      scroll-margin-top: 96px;
-    }
-
-    h1, h2, h3, h4 {
-      color: var(--primary-navy);
-      line-height: 1.2;
-      margin-bottom: 1rem;
-    }
-
-    h1 {
-      font-size: clamp(2.1rem, 4vw, 3.4rem);
-      letter-spacing: -0.03em;
-    }
-
-    h2 {
-      font-size: clamp(1.8rem, 3vw, 2.35rem);
-      letter-spacing: -0.02em;
-      position: relative;
-      padding-bottom: 12px;
-    }
-
-    h2::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 64px;
-      height: 4px;
-      border-radius: 4px;
-      background-color: var(--accent-teal);
-    }
-
-    h3 {
-      font-size: 1.25rem;
-    }
-
-    h4 {
-      font-size: 1rem;
-    }
-
-    p {
-      margin-bottom: 1rem;
-    }
-
-    .container {
-      width: min(100% - 40px, var(--max-width));
-      margin: 0 auto;
-    }
-
-    .section-padding {
-      padding: 84px 0;
-    }
-
-    .bg-light {
-      background-color: var(--light-gray);
-    }
-
-    .text-center {
-      text-align: center;
-    }
-
-    .text-center h2::after {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .section-intro {
-      max-width: 760px;
-      color: var(--text-muted);
-      font-size: 1.05rem;
-      margin-bottom: 2rem;
-    }
-
-    .text-center .section-intro {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 13px 22px;
-      background-color: var(--accent-teal);
-      color: var(--white);
-      font-weight: 700;
-      border-radius: 999px;
-      border: 2px solid var(--accent-teal);
-      cursor: pointer;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-      text-align: center;
-      min-height: 48px;
-    }
-
-    .btn:hover,
-    .btn:focus-visible {
-      background-color: var(--accent-teal-dark);
-      border-color: var(--accent-teal-dark);
-      transform: translateY(-1px);
-      box-shadow: 0 8px 18px rgba(42, 157, 143, 0.25);
-      outline: none;
-    }
-
-    .btn-secondary {
-      background-color: transparent;
-      color: var(--white);
-      border-color: rgba(255, 255, 255, 0.7);
-    }
-
-    .btn-secondary:hover,
-    .btn-secondary:focus-visible {
-      background-color: var(--white);
-      color: var(--primary-navy);
-      border-color: var(--white);
-      box-shadow: none;
-    }
-
-    .btn-light {
-      background-color: var(--white);
-      color: var(--primary-navy);
-      border-color: var(--white);
-    }
-
-    .btn-light:hover,
-    .btn-light:focus-visible {
-      background-color: var(--light-gray);
-      color: var(--primary-navy);
-      border-color: var(--light-gray);
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      padding: 7px 13px;
-      border-radius: 999px;
-      font-size: 0.88rem;
-      line-height: 1.2;
-      background: rgba(255, 255, 255, 0.12);
-      color: var(--white);
-      border: 1px solid rgba(255, 255, 255, 0.25);
-    }
-
-    .skip-link {
-      position: absolute;
-      top: -100px;
-      left: 20px;
-      background: var(--primary-navy);
-      color: var(--white);
-      padding: 10px 14px;
-      border-radius: 6px;
-      z-index: 9999;
-    }
-
-    .skip-link:focus {
-      top: 20px;
-    }
-
-    /* Header */
-    header {
-      background-color: var(--white);
-      color: var(--primary-navy);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-    }
-
-    .nav-container {
-      min-height: 82px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 24px;
-    }
-
-    .logo img {
-      height: 58px;
-      width: auto;
-    }
-
-    nav ul {
-      display: flex;
-      gap: 22px;
-      align-items: center;
-    }
-
-    nav a {
-      color: var(--primary-navy);
-      font-weight: 600;
-      font-size: 0.95rem;
-      transition: color 0.2s ease;
-    }
-
-    nav a:hover,
-    nav a:focus-visible {
-      color: var(--accent-teal);
-      outline: none;
-    }
-
-    .nav-cta {
-      padding: 9px 16px;
-      min-height: auto;
-      color: var(--white);
-    }
-
-    .menu-toggle {
-      display: none;
-      background: none;
-      border: none;
-      color: var(--primary-navy);
-      font-size: 1.8rem;
-      cursor: pointer;
-      padding: 8px;
-    }
-
-    /* Hero */
-    .hero {
-      background:
-        radial-gradient(circle at top right, rgba(42, 157, 143, 0.32), transparent 36%),
-        linear-gradient(135deg, var(--primary-navy), var(--primary-navy-dark));
-      color: var(--white);
-      border-bottom: 7px solid var(--accent-teal);
-      padding: 72px 0;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.12fr) minmax(280px, 0.88fr);
-      gap: 56px;
-      align-items: center;
-    }
-
-    .hero h1,
-    .hero h2,
-    .hero h3 {
-      color: var(--white);
-    }
-
-    .hero-subtitle {
-      font-size: 1.13rem;
-      color: rgba(255, 255, 255, 0.9);
-      max-width: 740px;
-      margin-bottom: 28px;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-bottom: 28px;
-    }
-
-    .hero-badges {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 8px;
-    }
-
-    .hero-image-card {
-      background: rgba(255, 255, 255, 0.08);
-      padding: 18px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      border-radius: 22px;
-      box-shadow: 0 18px 42px rgba(0, 0, 0, 0.18);
-    }
-
-    .hero-image-card img {
-      border-radius: 16px;
-      width: 100%;
-      height: auto;
-    }
-
-    /* Service area */
-    .service-area-banner {
-      background:
-        linear-gradient(rgba(244, 247, 246, 0.86), rgba(244, 247, 246, 0.86)),
-        url("assets/service-map.jpg");
-      background-size: cover;
-      background-position: center;
-      padding: 70px 0 92px;
-      border-bottom: 1px solid var(--mid-gray);
-    }
-
-    .location-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 18px;
-      margin-top: 30px;
-    }
-
-    .location-item {
-      background: rgba(255, 255, 255, 0.82);
-      border: 1px solid rgba(16, 69, 99, 0.08);
-      border-radius: var(--border-radius);
-      padding: 20px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
-    }
-
-    .location-item p {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      margin-bottom: 0;
-    }
-
-    /* Trust cards */
-    .pillars-section {
-      position: relative;
-      z-index: 2;
-      margin-top: -46px;
-      padding-bottom: 34px;
-    }
-
-    .pillars-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 22px;
-    }
-
-    .pillar-card,
-    .service-card,
-    .resource-card,
-    .step-card {
-      background: var(--white);
-      border-radius: var(--border-radius);
-      box-shadow: var(--shadow-card);
-      border: 1px solid rgba(16, 69, 99, 0.08);
-    }
-
-    .pillar-card {
-      padding: 26px;
-      border-top: 4px solid var(--accent-teal);
-    }
-
-    .pillar-card p {
-      color: var(--text-muted);
-      font-size: 0.96rem;
-      margin-bottom: 0;
-    }
-
-    /* Services */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 24px;
-      margin-top: 38px;
-    }
-
-    .service-card {
-      overflow: hidden;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-    }
-
-    .service-card:hover {
-      transform: translateY(-3px);
-      border-color: rgba(42, 157, 143, 0.45);
-      box-shadow: var(--shadow-soft);
-    }
-
-    .service-card img {
-      width: 100%;
-      height: 196px;
-      object-fit: cover;
-    }
-
-    .service-card-content {
-      padding: 25px;
-    }
-
-    .service-card h3 {
-      margin-bottom: 8px;
-    }
-
-    .service-description {
-      color: var(--text-muted);
-      font-size: 0.96rem;
-    }
-
-    .service-list {
-      margin-top: 14px;
-      padding-left: 18px;
-      list-style: disc;
-      color: var(--text-muted);
-      font-size: 0.94rem;
-    }
-
-    .service-list li {
-      margin-bottom: 7px;
-    }
-
-    /* Who we help */
-    .help-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-      gap: 36px;
-      align-items: start;
-    }
-
-    .check-list {
-      display: grid;
-      gap: 12px;
-      margin-top: 20px;
-    }
-
-    .check-list li {
-      position: relative;
-      padding-left: 30px;
-      color: var(--text-muted);
-    }
-
-    .check-list li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: var(--accent-teal);
-      font-weight: 800;
-    }
-
-    .highlight-box {
-      background: var(--light-gray);
-      border-left: 4px solid var(--accent-teal);
-      border-radius: var(--border-radius);
-      padding: 24px;
-    }
-
-    .highlight-box p:last-child {
-      margin-bottom: 0;
-    }
-
-    /* Team */
-    .team-profile-wrapper {
-      display: grid;
-      grid-template-columns: 310px minmax(0, 1fr);
-      gap: 42px;
-      align-items: start;
-      margin-top: 38px;
-      background: var(--white);
-      border-radius: var(--border-radius);
-      padding: 34px;
-      box-shadow: var(--shadow-card);
-      border: 1px solid rgba(16, 69, 99, 0.08);
-    }
-
-    .profile-photo-container img {
-      border-radius: 12px;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
-      width: 100%;
-    }
-
-    .profile-details-container {
-      display: grid;
-      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.25fr);
-      gap: 36px;
-    }
-
-    .role-title {
-      color: var(--accent-teal);
-      font-weight: 700;
-      margin-top: -8px;
-      margin-bottom: 16px;
-      display: block;
-    }
-
-    .team-profile-wrapper h4 {
-      font-size: 0.84rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--primary-navy);
-      border-bottom: 1px solid var(--mid-gray);
-      padding-bottom: 8px;
-      margin-top: 22px;
-      margin-bottom: 12px;
-    }
-
-    .credential-list li,
-    .competency-item {
-      color: var(--text-muted);
-      margin-bottom: 10px;
-    }
-
-    .competency-item strong {
-      color: var(--primary-navy);
-    }
-
-    /* Referrals */
-    .referral-content {
-      background:
-        radial-gradient(circle at bottom right, rgba(233, 196, 106, 0.16), transparent 38%),
-        linear-gradient(135deg, var(--primary-navy), var(--primary-navy-dark));
-      color: var(--white);
-      padding: 44px;
-      border-radius: 22px;
-      box-shadow: var(--shadow-soft);
-    }
-
-    .referral-content h2,
-    .referral-content h3,
-    .referral-content h4 {
-      color: var(--white);
-    }
-
-    .referral-content h2::after {
-      background-color: var(--accent-gold);
-    }
-
-    .referral-content > p {
-      color: rgba(255, 255, 255, 0.87);
-      max-width: 820px;
-    }
-
-    .referral-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 24px;
-      margin-top: 30px;
-    }
-
-    .referral-item {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      border-radius: var(--border-radius);
-      padding: 22px;
-    }
-
-    .referral-item h4 {
-      color: var(--accent-gold);
-      margin-bottom: 9px;
-    }
-
-    .referral-item p {
-      color: rgba(255, 255, 255, 0.88);
-      font-size: 0.96rem;
-      margin-bottom: 0;
-    }
-
-    /* Process */
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 18px;
-      margin-top: 34px;
-    }
-
-    .step-card {
-      padding: 22px;
-      position: relative;
-    }
-
-    .step-number {
-      width: 34px;
-      height: 34px;
-      border-radius: 999px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--accent-teal);
-      color: var(--white);
-      font-weight: 800;
-      margin-bottom: 14px;
-    }
-
-    .step-card p {
-      color: var(--text-muted);
-      font-size: 0.94rem;
-      margin-bottom: 0;
-    }
-
-    /* Resources */
-    .resources-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 24px;
-      margin-top: 32px;
-    }
-
-    .resource-card {
-      padding: 26px;
-      border-top: 4px solid var(--accent-teal);
-    }
-
-    .resource-card p {
-      color: var(--text-muted);
-      margin-bottom: 0;
-    }
-
-    /* Contact */
-    .contact-panel {
-      margin-top: 34px;
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 24px;
-    }
-
-    .contact-item {
-      background: var(--white);
-      border: 1px solid rgba(16, 69, 99, 0.08);
-      border-radius: var(--border-radius);
-      box-shadow: var(--shadow-card);
-      padding: 28px;
-      text-align: center;
-    }
-
-    .contact-icon {
-      font-size: 2rem;
-      margin-bottom: 12px;
-    }
-
-    .contact-item a {
-      color: var(--primary-navy);
-      font-weight: 800;
-      word-break: break-word;
-    }
-
-    .contact-item p:last-child {
-      color: var(--text-muted);
-      font-size: 0.94rem;
-      margin-bottom: 0;
-    }
-
-    .privacy-note {
-      max-width: 830px;
-      margin: 24px auto 0;
-      color: var(--text-muted);
-      font-size: 0.92rem;
-      text-align: center;
-    }
-
-    /* Footer */
-    footer {
-      background-color: var(--primary-navy-dark);
-      color: rgba(255, 255, 255, 0.82);
-      padding: 46px 0;
-      text-align: center;
-    }
-
-    footer h3 {
-      color: var(--white);
-      font-size: 1.45rem;
-      margin-bottom: 6px;
-    }
-
-    .footer-details {
-      margin: 24px 0;
-    }
-
-    .footer-small {
-      border-top: 1px solid rgba(255, 255, 255, 0.12);
-      padding-top: 20px;
-      font-size: 0.86rem;
-      color: rgba(255, 255, 255, 0.58);
-    }
-
-    /* Responsive */
-    @media (max-width: 1100px) {
-      .pillars-grid,
-      .services-grid,
-      .location-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .steps-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 880px) {
-      .menu-toggle {
-        display: inline-flex;
-      }
-
-      nav {
-        position: absolute;
-        top: 82px;
-        left: 0;
-        right: 0;
-        background: var(--white);
-        border-top: 1px solid var(--mid-gray);
-        box-shadow: 0 12px 22px rgba(0, 0, 0, 0.08);
-        display: none;
-      }
-
-      nav.is-open {
-        display: block;
-      }
-
-      nav ul {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-        padding: 10px 20px 18px;
-      }
-
-      nav li {
-        border-bottom: 1px solid var(--mid-gray);
-      }
-
-      nav li:last-child {
-        border-bottom: none;
-        padding-top: 14px;
-      }
-
-      nav a:not(.btn) {
-        display: block;
-        padding: 14px 0;
-      }
-
-      .nav-cta {
-        width: 100%;
-      }
-
-      .hero-grid,
-      .help-grid,
-      .team-profile-wrapper,
-      .profile-details-container {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding: 54px 0;
-      }
-
-      .hero-image-card {
-        max-width: 520px;
-      }
-
-      .referral-grid,
-      .resources-grid,
-      .contact-panel {
-        grid-template-columns: 1fr;
-      }
-
-      .steps-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .container {
-        width: min(100% - 28px, var(--max-width));
-      }
-
-      .section-padding {
-        padding: 60px 0;
-      }
-
-      .pillars-grid,
-      .services-grid,
-      .location-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .pillars-section {
-        margin-top: 0;
-        padding: 32px 0 0;
-        background: var(--light-gray);
-      }
-
-      .hero-actions .btn {
-        width: 100%;
-      }
-
-      .team-profile-wrapper,
-      .referral-content {
-        padding: 24px;
-      }
-
-      .logo img {
-        height: 52px;
-      }
-    }
-  </style>
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -851,49 +23,28 @@
     "image": "https://tandemphysio.com.au/assets/og-image.png",
     "telephone": "+61410048142",
     "email": "tandemphysionsw@gmail.com",
-    "areaServed": [
-      "Western Sydney",
-      "The Hills District",
-      "Blacktown",
-      "Parramatta",
-      "Liverpool",
-      "Fairfield"
-    ],
-    "medicalSpecialty": [
-      "Physiotherapy",
-      "Neurological Rehabilitation",
-      "Complex Disability Physiotherapy"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressRegion": "NSW",
-      "addressCountry": "AU"
-    }
+    "areaServed": ["Western Sydney", "The Hills District", "Blacktown", "Parramatta", "Liverpool", "Fairfield"],
+    "medicalSpecialty": ["Physiotherapy", "Neurological Rehabilitation", "Complex Disability Physiotherapy"],
+    "address": { "@type": "PostalAddress", "addressRegion": "NSW", "addressCountry": "AU" }
   }
   </script>
 </head>
-
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
-
   <header>
     <div class="container nav-container">
-      <a href="#home" class="logo" aria-label="Tandem Physio home">
+      <a href="index.html" class="logo" aria-label="Tandem Physio home">
         <img src="assets/logo.jpg" alt="Tandem Physio" />
       </a>
-
-      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
-        ☰
-      </button>
-
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">☰</button>
       <nav id="site-nav" aria-label="Main navigation">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#who-we-help">Who We Help</a></li>
-          <li><a href="#team">About</a></li>
-          <li><a href="#referrals">Referrals</a></li>
-          <li><a href="#contact" class="btn nav-cta">Refer / Enquire</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="ndis-physiotherapy.html" >NDIS</a></li>
+          <li><a href="icare-ltcs-physiotherapy.html" >iCare / LTCS</a></li>
+          <li><a href="refer.html" >Referrals</a></li>
+          <li><a href="index.html#contact" class="btn nav-cta">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -904,26 +55,20 @@
       <div class="container hero-grid">
         <div class="hero-content">
           <h1>Mobile neurological and complex disability physiotherapy across Western Sydney</h1>
-
-          <p class="hero-subtitle">
-            Tandem Physio provides home and community-based physiotherapy for people with neurological, respiratory and complex disability needs. We support practical rehabilitation, carer training and clear reports for funding bodies and care teams.
-          </p>
-
+          <p class="hero-subtitle">Tandem Physio provides home and community-based physiotherapy for people with neurological, respiratory and complex disability needs. We support practical rehabilitation, carer training and clear reports for funding bodies and care teams.</p>
           <div class="hero-actions">
-            <a href="https://forms.gle/7L3BrBQjdJgJ8eA27" target="_blank" rel="noopener" class="btn">Refer a Client</a>
+            <a href="refer.html" class="btn">Refer a Client</a>
             <a href="tel:0410048142" class="btn btn-secondary">Call Chris</a>
           </div>
-
           <div class="hero-badges" aria-label="Funding options">
             <span class="badge">NDIS self-managed & plan-managed</span>
             <span class="badge">LTCS / iCare</span>
+            <span class="badge">Workers compensation / SIRA</span>
             <span class="badge">DVA</span>
             <span class="badge">Home Care Packages</span>
-            <span class="badge">Medicare referrals</span>
             <span class="badge">Private clients</span>
           </div>
         </div>
-
         <div class="hero-image-card" aria-hidden="true">
           <img src="assets/hero-logo.png" alt="" />
         </div>
@@ -933,30 +78,12 @@
     <section class="service-area-banner" aria-labelledby="service-area-heading">
       <div class="container">
         <h2 id="service-area-heading">Mobile service area</h2>
-        <p class="section-intro">
-          We provide mobile neurological, complex disability and musculoskeletal rehabilitation across Western Sydney and The Hills District, with a focus on consistent, practical care in the client’s usual environment.
-        </p>
-
+        <p class="section-intro">We provide mobile neurological, complex disability and musculoskeletal rehabilitation across Western Sydney and The Hills District, with a focus on consistent, practical care in the client’s usual environment.</p>
         <div class="location-grid">
-          <div class="location-item">
-            <h4>The Hills District</h4>
-            <p>Glenorie, Dural, Kellyville, Castle Hill and Baulkham Hills.</p>
-          </div>
-
-          <div class="location-item">
-            <h4>Blacktown & North West</h4>
-            <p>Marsden Park, Schofields, Tallawong, Seven Hills and Blacktown.</p>
-          </div>
-
-          <div class="location-item">
-            <h4>Parramatta Region</h4>
-            <p>Westmead, Northmead, Parramatta and Winston Hills.</p>
-          </div>
-
-          <div class="location-item">
-            <h4>South West</h4>
-            <p>Wetherill Park, Fairfield and Liverpool.</p>
-          </div>
+          <div class="location-item"><h4>The Hills District</h4><p>Glenorie, Dural, Kellyville, Castle Hill and Baulkham Hills.</p></div>
+          <div class="location-item"><h4>Blacktown & North West</h4><p>Marsden Park, Schofields, Tallawong, Seven Hills and Blacktown.</p></div>
+          <div class="location-item"><h4>Parramatta Region</h4><p>Westmead, Northmead, Parramatta and Winston Hills.</p></div>
+          <div class="location-item"><h4>South West</h4><p>Wetherill Park, Fairfield and Liverpool.</p></div>
         </div>
       </div>
     </section>
@@ -964,174 +91,45 @@
     <section class="pillars-section" aria-label="Why choose Tandem Physio">
       <div class="container">
         <div class="pillars-grid">
-          <div class="pillar-card">
-            <h3>Neuro & respiratory focus</h3>
-            <p>Support for neurological disability, progressive conditions, respiratory decline, mobility change and complex care needs.</p>
-          </div>
-
-          <div class="pillar-card">
-            <h3>Clear clinical documentation</h3>
-            <p>Reports and letters that link impairments, functional limitations, risk and therapy recommendations in language funding teams can understand.</p>
-          </div>
-
-          <div class="pillar-card">
-            <h3>Practical home-based care</h3>
-            <p>Therapy delivered in the environments where mobility, transfers, positioning, fatigue and carer support actually occur.</p>
-          </div>
-
-          <div class="pillar-card">
-            <h3>Reliable communication</h3>
-            <p>Consistent updates for families, support coordinators, case managers and broader care teams when consent is in place.</p>
-          </div>
+          <div class="pillar-card"><h3>Neuro & respiratory focus</h3><p>Support for neurological disability, progressive conditions, respiratory decline, mobility change and complex care needs.</p></div>
+          <div class="pillar-card"><h3>Clear documentation</h3><p>Reports and letters that link impairments, functional limitations, risk and therapy recommendations in language funding teams can understand.</p></div>
+          <div class="pillar-card"><h3>Practical home-based care</h3><p>Therapy delivered in the environments where mobility, transfers, positioning, fatigue and carer support actually occur.</p></div>
+          <div class="pillar-card"><h3>Reliable communication</h3><p>Consistent updates for families, support coordinators, case managers and broader care teams when consent is in place.</p></div>
         </div>
       </div>
     </section>
 
     <section id="services" class="section-padding bg-light">
       <div class="container">
-        <div class="text-center">
-          <h2>Clinical services</h2>
-          <p class="section-intro">Physiotherapy focused on function, safety, independence and long-term care planning.</p>
-        </div>
-
+        <div class="text-center"><h2>Clinical services</h2><p class="section-intro">Physiotherapy focused on function, safety, independence and long-term care planning.</p></div>
         <div class="services-grid">
-          <article class="service-card">
-            <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Physiotherapy assessment and rehabilitation setting" loading="lazy" />
-            <div class="service-card-content">
-              <h3>Neurological rehabilitation</h3>
-              <p class="service-description">Home and community-based therapy for complex neurological presentations.</p>
-              <ul class="service-list">
-                <li>Stroke rehabilitation and mobility retraining</li>
-                <li>MND and progressive neurological conditions</li>
-                <li>TBI, ABI and spinal cord injury support</li>
-                <li>Gait, balance and falls-risk management</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="service-card">
-            <img src="assets/Resp-physio.jpg" alt="Respiratory physiotherapy assessment" loading="lazy" />
-            <div class="service-card-content">
-              <h3>Respiratory physiotherapy</h3>
-              <p class="service-description">Respiratory support for clients with neurological or complex disability needs.</p>
-              <ul class="service-list">
-                <li>Respiratory decline monitoring</li>
-                <li>Cough assist and airway clearance education</li>
-                <li>Suction and NIV-related coordination</li>
-                <li>Carer training and escalation planning</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="service-card">
-            <img src="assets/complex-disability.jpg" alt="Physiotherapist supporting a wheelchair user" loading="lazy" />
-            <div class="service-card-content">
-              <h3>Complex disability support</h3>
-              <p class="service-description">Long-term therapy planning for clients with high support needs.</p>
-              <ul class="service-list">
-                <li>Positioning, standing and pressure-care routines</li>
-                <li>Transfer practice and manual handling education</li>
-                <li>Equipment recommendations and trials</li>
-                <li>Care-team communication and training</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="service-card">
-            <img src="assets/chronic-pain1.jpg" alt="Chronic pain management education resources" loading="lazy" />
-            <div class="service-card-content">
-              <h3>Chronic pain management</h3>
-              <p class="service-description">A practical, person-centred approach to pain, pacing and function.</p>
-              <ul class="service-list">
-                <li>Biopsychosocial assessment</li>
-                <li>Graded activity and pacing strategies</li>
-                <li>Fatigue and flare-up planning</li>
-                <li>Confidence and self-efficacy building</li>
-              </ul>
-            </div>
-          </article>
+          <article class="service-card"><img src="assets/hero.jpg" alt="Physiotherapy assessment and rehabilitation setting" loading="lazy" /><div class="service-card-content"><h3>Neurological rehabilitation</h3><p class="service-description">Home and community-based therapy for complex neurological presentations.</p><ul class="service-list"><li>Stroke rehabilitation and mobility retraining</li><li>MND and progressive neurological conditions</li><li>TBI, ABI and spinal cord injury support</li><li>Gait, balance and falls-risk management</li></ul></div></article>
+          <article class="service-card"><img src="assets/Resp-physio.jpg" alt="Respiratory physiotherapy assessment" loading="lazy" /><div class="service-card-content"><h3>Respiratory physiotherapy</h3><p class="service-description">Respiratory support for clients with neurological or complex disability needs.</p><ul class="service-list"><li>Respiratory decline monitoring</li><li>Cough assist and airway clearance education</li><li>Suction and NIV-related coordination</li><li>Carer training and escalation planning</li></ul></div></article>
+          <article class="service-card"><img src="assets/complex-disability.jpg" alt="Physiotherapist supporting a wheelchair user" loading="lazy" /><div class="service-card-content"><h3>Complex disability support</h3><p class="service-description">Long-term therapy planning for clients with high support needs.</p><ul class="service-list"><li>Positioning, standing and pressure-care routines</li><li>Transfer practice and manual handling education</li><li>Equipment recommendations and trials</li><li>Care-team communication and training</li></ul></div></article>
+          <article class="service-card"><img src="assets/chronic-pain1.jpg" alt="Chronic pain management education resources" loading="lazy" /><div class="service-card-content"><h3>Chronic pain management</h3><p class="service-description">A practical, person-centred approach to pain, pacing and function.</p><ul class="service-list"><li>Biopsychosocial assessment</li><li>Graded activity and pacing strategies</li><li>Fatigue and flare-up planning</li><li>Confidence and self-efficacy building</li></ul></div></article>
         </div>
       </div>
     </section>
 
     <section id="who-we-help" class="section-padding">
-      <div class="container help-grid">
+      <div class="container split-grid">
         <div>
           <h2>Who we help</h2>
-          <p class="section-intro">
-            Tandem Physio supports adults with neurological, respiratory, mobility and complex disability-related needs, particularly where therapy needs to be coordinated with family, support workers, case managers or funding bodies.
-          </p>
-
-          <ul class="check-list">
-            <li>People living with stroke, MND, spinal cord injury, traumatic or acquired brain injury, progressive neurological conditions or complex chronic pain.</li>
-            <li>Clients who require home-based therapy, mobility review, transfer practice, equipment recommendations or carer training.</li>
-            <li>Families and referrers needing clear recommendations, funding justification and practical next steps.</li>
-          </ul>
+          <p class="section-intro">Tandem Physio supports adults with neurological, respiratory, mobility and complex disability-related needs, particularly where therapy needs to be coordinated with family, support workers, case managers or funding bodies.</p>
+          <ul class="check-list"><li>People living with stroke, MND, spinal cord injury, traumatic or acquired brain injury, progressive neurological conditions or complex chronic pain.</li><li>Clients who require home-based therapy, mobility review, transfer practice, equipment recommendations or carer training.</li><li>Families and referrers needing clear recommendations, funding justification and practical next steps.</li></ul>
         </div>
-
-        <div class="highlight-box">
-          <h3>Practical rehabilitation in the right environment</h3>
-          <p>
-            For many clients with disability or neurological conditions, the most useful assessment occurs at home or in the community. This allows therapy to consider real-world mobility, transfers, fatigue, access barriers, routines, equipment, support worker needs and safety risks.
-          </p>
-          <p>
-            Where appropriate, recommendations are documented clearly so that families, support coordinators, case managers and treating teams can understand the clinical reasoning behind the proposed supports.
-          </p>
-        </div>
+        <div class="highlight-box"><h3>Practical rehabilitation in the right environment</h3><p>For many clients with disability or neurological conditions, the most useful assessment occurs at home or in the community. This allows therapy to consider real-world mobility, transfers, fatigue, access barriers, routines, equipment, support worker needs and safety risks.</p><p>Where appropriate, recommendations are documented clearly so that families, support coordinators, case managers and treating teams can understand the clinical reasoning behind the proposed supports.</p></div>
       </div>
     </section>
 
     <section id="team" class="section-padding bg-light">
       <div class="container">
-        <div class="text-center">
-          <h2>About Tandem Physio</h2>
-          <p class="section-intro">Led by Chris Burgess, Principal Physiotherapist.</p>
-        </div>
-
+        <div class="text-center"><h2>About Tandem Physio</h2><p class="section-intro">Led by Chris Burgess, Principal Physiotherapist.</p></div>
         <div class="team-profile-wrapper">
-          <div class="profile-photo-container">
-            <img src="assets/Headshot-Tandem-Physio.jpg" alt="Chris Burgess, Principal Physiotherapist at Tandem Physio" loading="lazy" />
-          </div>
-
+          <div class="profile-photo-container"><img src="assets/Headshot-Tandem-Physio.jpg" alt="Chris Burgess, Principal Physiotherapist at Tandem Physio" loading="lazy" /></div>
           <div class="profile-details-container">
-            <div>
-              <h3>Chris Burgess</h3>
-              <span class="role-title">Principal Physiotherapist</span>
-
-              <p>
-                Chris leads Tandem Physio with a focus on neurological complexity, functional rehabilitation and clear clinical reasoning. His approach combines practical therapy, rapport-building and careful communication with the people involved in a client’s care.
-              </p>
-
-              <h4>Credentials</h4>
-              <ul class="credential-list">
-                <li>Bachelor of Applied Science (Physiotherapy) — University of Sydney</li>
-                <li>APA Neurological Physiotherapy</li>
-                <li>Menzies Multiple Sclerosis</li>
-                <li>SIRA Certified</li>
-                <li>AHPRA Registered</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4>Clinical focus</h4>
-
-              <div class="competency-item">
-                <strong>MND and neurodegenerative conditions:</strong> experience with functional monitoring, respiratory surveillance, equipment progression and care-team education.
-              </div>
-
-              <div class="competency-item">
-                <strong>Spasticity and mobility management:</strong> assessment of tone, mobility, positioning, contracture risk, transfers and functional goals.
-              </div>
-
-              <div class="competency-item">
-                <strong>Clinical documentation:</strong> ability to synthesise complex medical histories into clear, practical rehabilitation plans and funding recommendations.
-              </div>
-
-              <h4>Practice values</h4>
-              <p>
-                Tandem Physio aims to provide reliable, ethical and compassionate care. We maintain clear clinical boundaries, transparent communication and careful documentation to support safe decision-making.
-              </p>
-            </div>
+            <div><h3>Chris Burgess</h3><span class="role-title">Principal Physiotherapist</span><p>Chris leads Tandem Physio with a focus on neurological complexity, functional rehabilitation and clear clinical reasoning. His approach combines practical therapy, rapport-building and careful communication with the people involved in a client’s care.</p><h4>Credentials</h4><ul class="credential-list"><li>Bachelor of Applied Science (Physiotherapy) — University of Sydney</li><li>APA Neurological Physiotherapy</li><li>Menzies Multiple Sclerosis</li><li>SIRA Certified</li><li>AHPRA Registered</li></ul></div>
+            <div><h4>Clinical focus</h4><div class="competency-item"><strong>MND and neurodegenerative conditions:</strong> functional monitoring, respiratory surveillance, equipment progression and care-team education.</div><div class="competency-item"><strong>Spasticity and mobility management:</strong> tone, mobility, positioning, contracture risk, transfers and functional goals.</div><div class="competency-item"><strong>Clinical documentation:</strong> complex medical histories into clear, practical rehabilitation plans and funding recommendations.</div><h4>Practice values</h4><p>Tandem Physio aims to provide reliable, ethical and compassionate care with clear boundaries, transparent communication and careful documentation.</p></div>
           </div>
         </div>
       </div>
@@ -1141,173 +139,56 @@
       <div class="container">
         <div class="referral-content">
           <h2>For support coordinators and case managers</h2>
-          <p>
-            Tandem Physio is designed to be easy to refer to: clear communication, practical therapy, clinically reasoned recommendations and documentation that supports funding and care-team decisions.
-          </p>
-
+          <p>Tandem Physio is designed to be easy to refer to: clear communication, practical therapy, clinically reasoned recommendations and documentation that supports funding and care-team decisions.</p>
           <div class="referral-grid">
-            <div class="referral-item">
-              <h4>Clear documentation</h4>
-              <p>We link impairments, activity limitations, participation restrictions, risk and goals so recommendations are easier to understand and action.</p>
-            </div>
-
-            <div class="referral-item">
-              <h4>Complex care reasoning</h4>
-              <p>Support for therapy decisions involving mobility risk, respiratory care, carer training, positioning, equipment and non-delegable clinical tasks.</p>
-            </div>
-
-            <div class="referral-item">
-              <h4>Reliable follow-up</h4>
-              <p>We aim to reduce administrative burden by confirming suitability, communicating clearly and providing timely updates when consent is in place.</p>
-            </div>
+            <div class="referral-item"><h4>Clear documentation</h4><p>We link impairments, activity limitations, participation restrictions, risk and goals so recommendations are easier to understand and action.</p></div>
+            <div class="referral-item"><h4>Complex care reasoning</h4><p>Support for mobility risk, respiratory care, carer training, positioning, equipment and non-delegable clinical tasks.</p></div>
+            <div class="referral-item"><h4>Reliable follow-up</h4><p>We aim to reduce administrative burden by confirming suitability, communicating clearly and providing timely updates when consent is in place.</p></div>
           </div>
-
-          <div style="margin-top: 34px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center;">
-            <a href="https://forms.gle/7L3BrBQjdJgJ8eA27" target="_blank" rel="noopener" class="btn btn-light">Complete online referral form</a>
-            <a href="mailto:tandemphysionsw@gmail.com" class="btn btn-secondary">Email an enquiry</a>
-          </div>
+          <div style="margin-top: 34px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center;"><a href="refer.html" class="btn btn-light">Open referral page</a><a href="mailto:tandemphysionsw@gmail.com" class="btn btn-secondary">Email an enquiry</a></div>
         </div>
       </div>
     </section>
 
     <section id="process" class="section-padding bg-light">
       <div class="container">
-        <div class="text-center">
-          <h2>How referrals work</h2>
-          <p class="section-intro">A simple pathway from enquiry to assessment, therapy planning and ongoing support.</p>
-        </div>
-
+        <div class="text-center"><h2>How referrals work</h2><p class="section-intro">A simple pathway from enquiry to assessment, therapy planning and ongoing support.</p></div>
         <div class="steps-grid">
-          <div class="step-card">
-            <div class="step-number">1</div>
-            <h3>Submit enquiry</h3>
-            <p>Send the referral form, call or email with the client’s location, funding type and broad reason for referral.</p>
-          </div>
-
-          <div class="step-card">
-            <div class="step-number">2</div>
-            <h3>Confirm suitability</h3>
-            <p>We confirm service area, funding pathway, goals, urgency and whether Tandem Physio is the right fit.</p>
-          </div>
-
-          <div class="step-card">
-            <div class="step-number">3</div>
-            <h3>Initial assessment</h3>
-            <p>Assessment occurs at home or in the community, with consent-based involvement of family, support staff or case managers.</p>
-          </div>
-
-          <div class="step-card">
-            <div class="step-number">4</div>
-            <h3>Plan and document</h3>
-            <p>Recommendations, therapy goals, risk considerations and reporting needs are clarified after assessment.</p>
-          </div>
-
-          <div class="step-card">
-            <div class="step-number">5</div>
-            <h3>Ongoing support</h3>
-            <p>Therapy, reviews, carer training, care-team liaison or discharge planning are arranged as clinically appropriate.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="resources" class="section-padding">
-      <div class="container">
-        <div class="text-center">
-          <h2>Resources and FAQs</h2>
-          <p class="section-intro">Useful information for clients, families, support coordinators and case managers.</p>
-        </div>
-
-        <div class="resources-grid">
-          <div class="resource-card">
-            <h3>Typical initial assessment</h3>
-            <p>Initial assessments usually take 45–120 minutes depending on complexity. The session may include history, goals, mobility, transfers, respiratory considerations, equipment, routines and support needs.</p>
-          </div>
-
-          <div class="resource-card">
-            <h3>Funding and claiming</h3>
-            <p>We accept NDIS self-managed and plan-managed participants, LTCS/iCare, DVA, Home Care Packages and private clients. Medicare referrals may be accepted where eligible; a gap payment may apply.</p>
-          </div>
-
-          <div class="resource-card">
-            <h3>Service areas</h3>
-            <p>We provide mobile physiotherapy across The Hills District, Blacktown, Parramatta, Liverpool and surrounding Western Sydney suburbs. Please enquire if your suburb is nearby.</p>
-          </div>
+          <div class="step-card"><div class="step-number">1</div><h3>Submit enquiry</h3><p>Send the referral form, call or email with the client’s location, funding type and broad reason for referral.</p></div>
+          <div class="step-card"><div class="step-number">2</div><h3>Confirm suitability</h3><p>We confirm service area, funding pathway, goals, urgency and whether Tandem Physio is the right fit.</p></div>
+          <div class="step-card"><div class="step-number">3</div><h3>Initial assessment</h3><p>Assessment occurs at home or in the community, with consent-based involvement of family, support staff or case managers.</p></div>
+          <div class="step-card"><div class="step-number">4</div><h3>Plan and document</h3><p>Recommendations, therapy goals, risk considerations and reporting needs are clarified after assessment.</p></div>
+          <div class="step-card"><div class="step-number">5</div><h3>Ongoing support</h3><p>Therapy, reviews, carer training, care-team liaison or discharge planning are arranged as clinically appropriate.</p></div>
         </div>
       </div>
     </section>
 
     <section id="contact" class="section-padding bg-light">
       <div class="container">
-        <div class="text-center">
-          <h2>Contact Tandem Physio</h2>
-          <p class="section-intro">Discuss a referral, ask about availability or confirm whether the service is suitable for a client’s needs.</p>
-        </div>
-
+        <div class="text-center"><h2>Contact Tandem Physio</h2><p class="section-intro">Discuss a referral, ask about availability or confirm whether the service is suitable for a client’s needs.</p></div>
         <div class="contact-panel">
-          <div class="contact-item">
-            <div class="contact-icon" aria-hidden="true">📞</div>
-            <h3>Call</h3>
-            <p><a href="tel:0410048142">0410 048 142</a></p>
-            <p>Leave a message if unavailable and we will return your call.</p>
-          </div>
-
-          <div class="contact-item">
-            <div class="contact-icon" aria-hidden="true">✉️</div>
-            <h3>Email</h3>
-            <p><a href="mailto:tandemphysionsw@gmail.com">tandemphysionsw@gmail.com</a></p>
-            <p>For general enquiries, referrals and case-manager communication.</p>
-          </div>
-
-          <div class="contact-item">
-            <div class="contact-icon" aria-hidden="true">📝</div>
-            <h3>Online referral</h3>
-            <p><a href="https://forms.gle/7L3BrBQjdJgJ8eA27" target="_blank" rel="noopener">Complete referral form</a></p>
-            <p>Best option for support coordinators and case managers.</p>
-          </div>
+          <div class="contact-item"><div class="contact-icon" aria-hidden="true">📞</div><h3>Call</h3><p><a href="tel:0410048142">0410 048 142</a></p><p>Leave a message if unavailable and we will return your call.</p></div>
+          <div class="contact-item"><div class="contact-icon" aria-hidden="true">✉️</div><h3>Email</h3><p><a href="mailto:tandemphysionsw@gmail.com">tandemphysionsw@gmail.com</a></p><p>For general enquiries, referrals and case-manager communication.</p></div>
+          <div class="contact-item"><div class="contact-icon" aria-hidden="true">📝</div><h3>Online referral</h3><p><a href="refer.html">Complete referral form</a></p><p>Best option for support coordinators and case managers.</p></div>
         </div>
-
-        <p class="privacy-note">
-          Please avoid including unnecessary sensitive information until consent and service arrangements are confirmed. Information submitted through the referral form is used to respond to the enquiry and determine service suitability.
-        </p>
+        <p class="privacy-note">Please avoid including unnecessary sensitive information until consent and service arrangements are confirmed. Information submitted through the referral form is used to respond to the enquiry and determine service suitability.</p>
       </div>
     </section>
   </main>
-
   <footer>
     <div class="container">
       <h3>Tandem Physio</h3>
       <p>Empowering movement, together.</p>
-
       <div class="footer-details">
         <p>0410 048 142 | tandemphysionsw@gmail.com</p>
         <p>Mobile physiotherapy across Western Sydney and The Hills District</p>
       </div>
-
       <div class="footer-small">
         <p>&copy; 2026 Tandem Physio. All rights reserved. ABN registered.</p>
+        <p><a href="privacy.html">Privacy and referral information</a></p>
       </div>
     </div>
   </footer>
-
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('#site-nav');
-    const navLinks = document.querySelectorAll('#site-nav a');
-
-    menuToggle.addEventListener('click', () => {
-      const isOpen = nav.classList.toggle('is-open');
-      menuToggle.setAttribute('aria-expanded', String(isOpen));
-      menuToggle.textContent = isOpen ? '×' : '☰';
-    });
-
-    navLinks.forEach((link) => {
-      link.addEventListener('click', () => {
-        nav.classList.remove('is-open');
-        menuToggle.setAttribute('aria-expanded', 'false');
-        menuToggle.textContent = '☰';
-      });
-    });
-  </script>
+  <script src="assets/site.js"></script>
 </body>
 </html>
