@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mobile physiotherapy for iCare, LTCS, severe injury and SIRA-related referrals across Western Sydney. Support for neurological rehabilitation, complex disability, mobility, respiratory needs and clinically reasoned reporting." />
+  <meta name="theme-color" content="#104563" />
+  <title>iCare / LTCS Physiotherapy | Tandem Physio</title>
+  <link rel="canonical" href="https://tandemphysio.com.au/icare-ltcs-physiotherapy.html" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="assets/site.css" />
+  
+<style>
+  .tp-hero {
+    color: #fff;
+    background:
+      radial-gradient(circle at 92% 12%, rgba(233, 196, 106, 0.24), transparent 28%),
+      radial-gradient(circle at 8% 94%, rgba(42, 157, 143, 0.27), transparent 34%),
+      linear-gradient(135deg, #104563 0%, #082f45 66%, #2A9D8F 145%);
+    padding: 76px 0;
+    border-bottom: 6px solid #2A9D8F;
+  }
+  .tp-hero.gold { border-bottom-color: #E9C46A; }
+  .tp-hero h1, .tp-hero h2, .tp-hero h3 { color: #fff; }
+  .tp-hero h2::after, .tp-hero h3::after { display: none; }
+  .tp-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(310px, 0.95fr);
+    gap: 48px;
+    align-items: center;
+  }
+  .tp-eyebrow {
+    display: inline-flex;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    font-size: 0.88rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    margin-bottom: 18px;
+  }
+  .tp-panel {
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 24px;
+    padding: 22px;
+    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.22);
+  }
+  .tp-panel-intro {
+    background: rgba(255, 255, 255, 0.95);
+    color: #104563;
+    border-radius: 18px;
+    padding: 22px;
+    margin-bottom: 16px;
+  }
+  .tp-panel-intro p { color: #5f6f73; margin-bottom: 0; }
+  .tp-mini-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .tp-mini {
+    background: rgba(255, 255, 255, 0.92);
+    color: #104563;
+    border-radius: 16px;
+    padding: 18px;
+    min-height: 124px;
+  }
+  .tp-mini strong { display: block; margin-bottom: 8px; }
+  .tp-mini span { display: block; color: #5f6f73; font-size: 0.92rem; line-height: 1.45; }
+  .tp-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    background: rgba(42, 157, 143, 0.14);
+    color: #104563;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+  }
+  .tp-icon.gold { background: rgba(233, 196, 106, 0.24); }
+  .tp-section { padding: 82px 0; }
+  .tp-strip {
+    background: #f4f7f6;
+    padding: 34px 0;
+    border-bottom: 1px solid #e3e9e7;
+  }
+  .tp-strip-grid, .tp-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+  .tp-card, .tp-feature, .tp-path-card, .tp-faq details, .tp-callout, .tp-box {
+    background: #fff;
+    border: 1px solid rgba(16, 69, 99, 0.09);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  }
+  .tp-card { padding: 22px; }
+  .tp-card strong { display: block; color: #104563; margin-bottom: 7px; }
+  .tp-card span, .tp-feature p, .tp-box li, .tp-path-item span { color: #5f6f73; }
+  .tp-feature-grid { margin-top: 34px; gap: 22px; }
+  .tp-feature {
+    padding: 26px;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .tp-feature:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(16,69,99,.12); }
+  .tp-feature p { margin-bottom: 0; }
+  .tp-pathway {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    gap: 34px;
+    align-items: start;
+  }
+  .tp-callout {
+    padding: 28px;
+    background: radial-gradient(circle at top right, rgba(42,157,143,.14), transparent 38%), #fff;
+    position: sticky;
+    top: 110px;
+  }
+  .tp-callout.gold { background: radial-gradient(circle at top right, rgba(233,196,106,.18), transparent 38%), #fff; }
+  .tp-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+  .tp-tag {
+    padding: 8px 12px;
+    background: rgba(42,157,143,.11);
+    color: #104563;
+    border-radius: 999px;
+    font-size: .9rem;
+    font-weight: 700;
+  }
+  .tp-tag.gold { background: rgba(233,196,106,.22); }
+  .tp-path-card { padding: 28px; }
+  .tp-path-list { display: grid; gap: 14px; margin-top: 18px; }
+  .tp-path-item {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 14px;
+    align-items: start;
+    padding: 16px;
+    background: #f4f7f6;
+    border-radius: 14px;
+  }
+  .tp-num {
+    width: 36px; height: 36px; border-radius: 999px;
+    background: #2A9D8F; color: #fff;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-weight: 900;
+  }
+  .tp-num.gold { background: #E9C46A; color: #082f45; }
+  .tp-path-item strong { color: #104563; display: block; margin-bottom: 4px; }
+  .tp-box-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 24px; margin-top: 30px; }
+  .tp-box { padding: 28px; }
+  .tp-box ul { list-style: none; display: grid; gap: 12px; margin-top: 14px; }
+  .tp-box li { position: relative; padding-left: 28px; }
+  .tp-box li::before { content: "✓"; position: absolute; left: 0; color: #2A9D8F; font-weight: 900; }
+  .tp-faq { display: grid; gap: 14px; max-width: 920px; margin: 30px auto 0; }
+  .tp-faq details { overflow: hidden; }
+  .tp-faq summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 21px 24px;
+    color: #104563;
+    font-weight: 800;
+    position: relative;
+  }
+  .tp-faq summary::-webkit-details-marker { display: none; }
+  .tp-faq summary::after {
+    content: "+";
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2A9D8F;
+    font-size: 1.3rem;
+  }
+  .tp-faq details[open] summary::after { content: "–"; }
+  .tp-faq p { color: #5f6f73; padding: 0 24px 22px; margin: 0; }
+  .tp-cta {
+    background: linear-gradient(135deg, #104563, #082f45);
+    color: #fff;
+    padding: 54px 0;
+  }
+  .tp-cta h2 { color: #fff; }
+  .tp-cta h2::after { background: #E9C46A; }
+  .tp-cta p { color: rgba(255,255,255,.88); margin-bottom: 0; }
+  .tp-cta-inner { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 24px; align-items: center; }
+  .tp-cta-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+  @media (max-width: 980px) {
+    .tp-hero-grid, .tp-strip-grid, .tp-feature-grid, .tp-pathway, .tp-box-grid, .tp-cta-inner { grid-template-columns: 1fr; }
+    .tp-callout { position: static; }
+  }
+  @media (max-width: 640px) {
+    .tp-hero { padding: 54px 0; }
+    .tp-section { padding: 60px 0; }
+    .tp-mini-grid { grid-template-columns: 1fr; }
+    .tp-cta-actions .btn { width: 100%; }
+  }
+</style>
+
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Tandem Physio home">
+        <img src="assets/logo.jpg" alt="Tandem Physio" />
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">☰</button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="ndis-physiotherapy.html" >NDIS</a></li>
+          <li><a href="icare-ltcs-physiotherapy.html" aria-current="page">iCare / LTCS</a></li>
+          <li><a href="refer.html">Referrals</a></li>
+          <li><a href="index.html#contact" class="btn nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="tp-hero gold">
+      <div class="container tp-hero-grid">
+        <div>
+          <span class="tp-eyebrow">iCare · LTCS · SIRA-related referrals</span>
+          <h1>Mobile physiotherapy for severe injury and complex rehabilitation pathways</h1>
+          <p class="hero-subtitle">Tandem Physio supports suitable iCare, LTCS and workers compensation referrals where home-based assessment, practical therapy, case-manager communication and clear clinical documentation are important.</p>
+          <div class="hero-actions">
+            <a href="refer.html" class="btn">Refer a Client</a>
+            <a href="tel:0410048142" class="btn btn-secondary">Call Chris</a>
+          </div>
+          <div class="hero-badges" aria-label="NDIS service features">
+            <span class="badge">LTCS / iCare</span><span class="badge">Workers compensation</span><span class="badge">SIRA certified</span><span class="badge">Home visits</span>
+          </div>
+        </div>
+        <aside class="tp-panel" aria-label="iCare referral snapshot">
+          <div class="tp-panel-intro">
+            <h3>Case-manager snapshot</h3>
+            <p>Built for referrals where risk, function, equipment, support-worker routines and reporting need to be managed clearly.</p>
+          </div>
+          <div class="tp-mini-grid">
+            <div class="tp-mini"><div class="tp-icon">1</div><strong>Severe injury</strong><span>SCI, ABI/TBI, complex orthopaedic or neurological presentations.</span></div>
+            <div class="tp-mini"><div class="tp-icon">2</div><strong>Functional review</strong><span>Mobility, transfers, falls risk, fatigue and access barriers.</span></div>
+            <div class="tp-mini"><div class="tp-icon">3</div><strong>Training</strong><span>Support-worker guidance, safe routines and practical implementation.</span></div>
+            <div class="tp-mini"><div class="tp-icon">4</div><strong>Reporting</strong><span>Clear updates, recommendations and funding-related clinical reasoning.</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="tp-strip">
+      <div class="container tp-strip-grid">
+        <div class="tp-card"><strong>Referral pathways</strong><span>iCare / LTCS, severe injury, workers compensation and related case-manager referrals.</span></div>
+        <div class="tp-card"><strong>Clinical setting</strong><span>Home and community assessment where real-world function can be directly observed.</span></div>
+        <div class="tp-card"><strong>Referrer focus</strong><span>Responsive communication, practical recommendations and clear documentation.</span></div>
+      </div>
+    </section>
+
+    <section class="tp-section">
+      <div class="container">
+        <div class="text-center">
+          <h2>What the service can include</h2>
+          <p class="section-intro">A practical physiotherapy pathway for complex presentations that need more than a generic clinic-based approach.</p>
+        </div>
+        <div class="tp-feature-grid">
+          <article class="tp-feature"><div class="tp-icon">⇄</div><h3>Home-based assessment</h3><p>Observation of transfers, mobility, access, equipment use, fatigue, carer routines and practical safety barriers.</p></article>
+          <article class="tp-feature"><div class="tp-icon">⚠</div><h3>Complex physical management</h3><p>Rehabilitation planning for neurological disability, severe injury, contracture risk, pain, deconditioning and changing physical capacity.</p></article>
+          <article class="tp-feature"><div class="tp-icon">🧩</div><h3>Liaison and documentation</h3><p>Clear communication with case managers and treating teams when consent is in place, including clinically reasoned recommendations.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tp-section bg-light">
+      <div class="container tp-pathway">
+        <aside class="tp-callout">
+          <h2>Best suited referrals</h2>
+          <p class="section-intro">Complex clients where function, risk and support needs are best assessed in the real environment.</p>
+          <div class="tp-tags">
+            <span class="tp-tag gold">Spinal cord injury</span><span class="tp-tag gold">ABI / TBI</span><span class="tp-tag gold">Stroke</span><span class="tp-tag gold">Severe orthopaedic injury</span><span class="tp-tag gold">Respiratory risk</span><span class="tp-tag gold">Mobility decline</span><span class="tp-tag gold">Transfer risk</span><span class="tp-tag gold">Support-worker training</span>
+          </div>
+        </aside>
+        <div class="tp-path-card">
+          <h2>Referral and commencement pathway</h2>
+          <div class="tp-path-list">
+            <div class="tp-path-item"><span class="tp-num">1</span><div><strong>Referral received</strong><span>Case manager, insurer, treating team or referrer provides reason for referral and client location.</span></div></div>
+            <div class="tp-path-item"><span class="tp-num">2</span><div><strong>Scheme pathway confirmed</strong><span>Funding stream, approval requirements, claim details and billing pathway are clarified before commencement.</span></div></div>
+            <div class="tp-path-item"><span class="tp-num">3</span><div><strong>Initial assessment</strong><span>Home or community assessment focuses on function, goals, risks, equipment and support needs.</span></div></div>
+            <div class="tp-path-item"><span class="tp-num">4</span><div><strong>Recommendations</strong><span>Therapy plan, training needs, risks and reporting requirements are clarified with the appropriate parties.</span></div></div>
+            <div class="tp-path-item"><span class="tp-num">5</span><div><strong>Ongoing support</strong><span>Therapy, reviews, liaison, support-worker training and reporting continue as clinically appropriate.</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tp-section">
+      <div class="container">
+        <div class="text-center">
+          <h2>Information that helps before booking</h2>
+          <p class="section-intro">These details help prevent delays and make the referral easier to triage.</p>
+        </div>
+        <div class="tp-box-grid">
+          <div class="tp-box"><h3>Referral details</h3><ul><li>Client suburb and preferred contact person.</li><li>Scheme type: LTCS/iCare, workers compensation, CTP or other pathway.</li><li>Claim or participant number if available.</li><li>Reason for referral, urgency and key risks.</li><li>Known approval requirements, report needs or case-manager preferences.</li></ul></div>
+          <div class="tp-box"><h3>Clinical priorities</h3><ul><li>Mobility, transfers, manual handling and falls risk.</li><li>Physical management, positioning, tone or contracture risk.</li><li>Respiratory considerations, fatigue and escalation planning.</li><li>Support-worker education and home program implementation.</li><li>Clear updates for the broader care team.</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tp-section bg-light">
+      <div class="container">
+        <div class="text-center"><h2>iCare / severe injury FAQs</h2><p class="section-intro">Useful information for case managers, insurers and referrers.</p></div>
+        <div class="tp-faq">
+          <details open><summary>Do you accept LTCS / iCare referrals?</summary><p>Yes. Tandem Physio can support suitable iCare / LTCS referrals where the service fit, approval pathway and clinical needs align.</p></details>
+          <details><summary>Do you also see workers compensation clients?</summary><p>Yes, suitable workers compensation referrals may also be accepted. The exact process depends on the scheme, approval status, billing pathway and clinical requirements.</p></details>
+          <details><summary>What should be confirmed before treatment starts?</summary><p>For insurer-funded referrals, the scheme, claim details, approved hours, rate, travel/reporting approval and billing instructions should be clarified before billable treatment commences.</p></details>
+          <details><summary>How can a case manager refer?</summary><p>Use the referral page, email the referral details, or call to discuss suitability, location, urgency and funding pathway.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="tp-cta">
+      <div class="container tp-cta-inner">
+        <div><h2>Discuss an iCare or severe injury referral</h2><p>If you would like to confirm suitability before referring, please contact Tandem Physio directly.</p></div>
+        <div class="tp-cta-actions"><a href="refer.html" class="btn btn-light">Open referral page</a><a href="tel:0410048142" class="btn btn-secondary">Call Chris</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <h3>Tandem Physio</h3>
+      <p>Empowering movement, together.</p>
+      <div class="footer-details">
+        <p>0410 048 142 | tandemphysionsw@gmail.com</p>
+        <p>Mobile physiotherapy across Western Sydney and The Hills District</p>
+      </div>
+      <div class="footer-small">
+        <p>&copy; 2026 Tandem Physio. All rights reserved. ABN registered.</p>
+        <p><a href="privacy.html">Privacy and referral information</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/site.js"></script>
+
+</body>
+</html>
