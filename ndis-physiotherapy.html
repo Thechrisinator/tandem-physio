@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mobile NDIS physiotherapy across Western Sydney for neurological rehabilitation, complex disability, mobility, falls, transfers, respiratory support and functional capacity-related care." />
+  <meta name="theme-color" content="#104563" />
+  <title>NDIS Physiotherapy | Tandem Physio</title>
+  <link rel="canonical" href="https://tandemphysio.com.au/ndis-physiotherapy.html" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="assets/site.css" />
+  
+<style>
+  .tp-hero {
+    color: #fff;
+    background:
+      radial-gradient(circle at 92% 12%, rgba(233, 196, 106, 0.24), transparent 28%),
+      radial-gradient(circle at 8% 94%, rgba(42, 157, 143, 0.27), transparent 34%),
+      linear-gradient(135deg, #104563 0%, #082f45 66%, #2A9D8F 145%);
+    padding: 76px 0;
+    border-bottom: 6px solid #2A9D8F;
+  }
+  .tp-hero.gold { border-bottom-color: #E9C46A; }
+  .tp-hero h1, .tp-hero h2, .tp-hero h3 { color: #fff; }
+  .tp-hero h2::after, .tp-hero h3::after { display: none; }
+  .tp-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(310px, 0.95fr);
+    gap: 48px;
+    align-items: center;
+  }
+  .tp-eyebrow {
+    display: inline-flex;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    font-size: 0.88rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    margin-bottom: 18px;
+  }
+  .tp-panel {
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 24px;
+    padding: 22px;
+    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.22);
+  }
+  .tp-panel-intro {
+    background: rgba(255, 255, 255, 0.97);
+    color: #104563;
+    border-radius: 18px;
+    padding: 22px;
+    margin-bottom: 16px;
+  }
+  .tp-panel-intro h3 {
+    color: #104563 !important;
+    margin-bottom: 10px;
+  }
+  .tp-panel-intro p { color: #5f6f73; margin-bottom: 0; }
+  .tp-mini-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .tp-mini {
+    background: rgba(255, 255, 255, 0.92);
+    color: #104563;
+    border-radius: 16px;
+    padding: 18px;
+    min-height: 124px;
+  }
+  .tp-mini strong { display: block; margin-bottom: 8px; }
+  .tp-mini span { display: block; color: #5f6f73; font-size: 0.92rem; line-height: 1.45; }
+  .tp-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    background: rgba(42, 157, 143, 0.14);
+    color: #104563;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+  }
+  .tp-icon.gold { background: rgba(233, 196, 106, 0.24); }
+  .tp-section { padding: 82px 0; }
+  .tp-strip {
+    background: #f4f7f6;
+    padding: 34px 0;
+    border-bottom: 1px solid #e3e9e7;
+  }
+  .tp-strip-grid, .tp-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+  .tp-card, .tp-feature, .tp-path-card, .tp-faq details, .tp-callout, .tp-box {
+    background: #fff;
+    border: 1px solid rgba(16, 69, 99, 0.09);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  }
+  .tp-card { padding: 22px; }
+  .tp-card strong { display: block; color: #104563; margin-bottom: 7px; }
+  .tp-card span, .tp-feature p, .tp-box li, .tp-path-item span { color: #5f6f73; }
+  .tp-feature-grid { margin-top: 34px; gap: 22px; }
+  .tp-feature {
+    padding: 26px;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .tp-feature:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(16,69,99,.12); }
+  .tp-feature p { margin-bottom: 0; }
+  .tp-pathway {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    gap: 34px;
+    align-items: start;
+  }
+  .tp-callout {
+    padding: 28px;
+    background: radial-gradient(circle at top right, rgba(42,157,143,.14), transparent 38%), #fff;
+    position: sticky;
+    top: 110px;
+  }
+  .tp-callout.gold { background: radial-gradient(circle at top right, rgba(233,196,106,.18), transparent 38%), #fff; }
+  .tp-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+  .tp-tag {
+    padding: 8px 12px;
+    background: rgba(42,157,143,.11);
+    color: #104563;
+    border-radius: 999px;
+    font-size: .9rem;
+    font-weight: 700;
+  }
+  .tp-tag.gold { background: rgba(233,196,106,.22); }
+  .tp-path-card { padding: 28px; }
+  .tp-path-list { display: grid; gap: 14px; margin-top: 18px; }
+  .tp-path-item {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 14px;
+    align-items: start;
+    padding: 16px;
+    background: #f4f7f6;
+    border-radius: 14px;
+  }
+  .tp-num {
+    width: 36px; height: 36px; border-radius: 999px;
+    background: #2A9D8F; color: #fff;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-weight: 900;
+  }
+  .tp-num.gold { background: #E9C46A; color: #082f45; }
+  .tp-path-item strong { color: #104563; display: block; margin-bottom: 4px; }
+  .tp-box-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 24px; margin-top: 30px; }
+  .tp-box { padding: 28px; }
+  .tp-box ul { list-style: none; display: grid; gap: 12px; margin-top: 14px; }
+  .tp-box li { position: relative; padding-left: 28px; }
+  .tp-box li::before { content: "✓"; position: absolute; left: 0; color: #2A9D8F; font-weight: 900; }
+  .tp-faq { display: grid; gap: 14px; max-width: 920px; margin: 30px auto 0; }
+  .tp-faq details { overflow: hidden; }
+  .tp-faq summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 21px 24px;
+    color: #104563;
+    font-weight: 800;
+    position: relative;
+  }
+  .tp-faq summary::-webkit-details-marker { display: none; }
+  .tp-faq summary::after {
+    content: "+";
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2A9D8F;
+    font-size: 1.3rem;
+  }
+  .tp-faq details[open] summary::after { content: "–"; }
+  .tp-faq p { color: #5f6f73; padding: 0 24px 22px; margin: 0; }
+  .tp-cta {
+    background: linear-gradient(135deg, #104563, #082f45);
+    color: #fff;
+    padding: 54px 0;
+  }
+  .tp-cta h2 { color: #fff; }
+  .tp-cta h2::after { background: #E9C46A; }
+  .tp-cta p { color: rgba(255,255,255,.88); margin-bottom: 0; }
+  .tp-cta-inner { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 24px; align-items: center; }
+  .tp-cta-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+  @media (max-width: 980px) {
+    .tp-hero-grid, .tp-strip-grid, .tp-feature-grid, .tp-pathway, .tp-box-grid, .tp-cta-inner { grid-template-columns: 1fr; }
+    .tp-callout { position: static; }
+  }
+  @media (max-width: 640px) {
+    .tp-hero { padding: 54px 0; }
+    .tp-section { padding: 60px 0; }
+    .tp-mini-grid { grid-template-columns: 1fr; }
+    .tp-cta-actions .btn { width: 100%; }
+  }
+</style>
+
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Tandem Physio home">
+        <img src="assets/logo.jpg" alt="Tandem Physio" />
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">☰</button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="ndis-physiotherapy.html" aria-current="page">NDIS</a></li>
+          <li><a href="icare-ltcs-physiotherapy.html">iCare / LTCS</a></li>
+          <li><a href="refer.html">Referrals</a></li>
+          <li><a href="index.html#contact" class="btn nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="tp-hero">
+      <div class="container tp-hero-grid">
+        <div>
+          <span class="tp-eyebrow">NDIS physiotherapy · Western Sydney</span>
+          <h1>Practical mobile physiotherapy for complex disability and neurological needs</h1>
+          <p class="hero-subtitle">Home and community-based physiotherapy for NDIS participants who need support with mobility, transfers, falls risk, carer education, respiratory considerations and functional rehabilitation.</p>
+          <div class="hero-actions">
+            <a href="refer.html" class="btn">Refer an NDIS participant</a>
+            <a href="tel:0410048142" class="btn btn-secondary">Call Chris</a>
+          </div>
+          <div class="hero-badges" aria-label="NDIS service features">
+            <span class="badge">Plan-managed</span><span class="badge">Self-managed</span><span class="badge">Home visits</span><span class="badge">Functional documentation</span>
+          </div>
+        </div>
+        <aside class="tp-panel" aria-label="NDIS referral snapshot">
+          <div class="tp-panel-intro">
+            <h3>Referral snapshot</h3>
+            <p>Best suited to participants where the functional issue needs to be understood in the real environment, not only in a clinic.</p>
+          </div>
+          <div class="tp-mini-grid">
+            <div class="tp-mini"><div class="tp-icon">1</div><strong>Mobility</strong><span>Walking, wheelchair mobility, endurance, balance and falls risk.</span></div>
+            <div class="tp-mini"><div class="tp-icon">2</div><strong>Transfers</strong><span>Bed, chair, toilet, car and support-worker assisted transfers.</span></div>
+            <div class="tp-mini"><div class="tp-icon">3</div><strong>Carer training</strong><span>Practical routines, safety education and support-worker guidance.</span></div>
+            <div class="tp-mini"><div class="tp-icon">4</div><strong>Reports</strong><span>Clear clinical reasoning linked to function, risk and goals.</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="tp-strip">
+      <div class="container tp-strip-grid">
+        <div class="tp-card"><strong>Funding accepted</strong><span>NDIS plan-managed and self-managed participants.</span></div>
+        <div class="tp-card"><strong>Service setting</strong><span>Home and community visits across Western Sydney and The Hills District.</span></div>
+        <div class="tp-card"><strong>Clinical focus</strong><span>Neurological disability, complex disability, mobility, transfers, falls risk and physical management.</span></div>
+      </div>
+    </section>
+
+    <section class="tp-section">
+      <div class="container">
+        <div class="text-center">
+          <h2>When to consider a physiotherapy referral</h2>
+          <p class="section-intro">These are common triggers for support coordinators, families and care teams.</p>
+        </div>
+        <div class="tp-feature-grid">
+          <article class="tp-feature"><div class="tp-icon">⇄</div><h3>Mobility or transfer change</h3><p>Reduced walking capacity, increased falls, difficulty with transfers, manual handling concerns or reduced community access.</p></article>
+          <article class="tp-feature"><div class="tp-icon">⚠</div><h3>Increasing risk</h3><p>Fatigue, deconditioning, contracture risk, pain, respiratory decline, pressure-care concerns or increasing reliance on support.</p></article>
+          <article class="tp-feature"><div class="tp-icon">🧩</div><h3>Complex team needs</h3><p>Need for therapy planning, carer education, equipment-linked rehabilitation or clear communication with the broader MDT.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tp-section bg-light">
+      <div class="container tp-pathway">
+        <aside class="tp-callout">
+          <h2>Who we support</h2>
+          <p class="section-intro">Adults with neurological, respiratory, mobility and complex disability-related physiotherapy needs.</p>
+          <div class="tp-tags">
+            <span class="tp-tag">Stroke</span><span class="tp-tag">MND</span><span class="tp-tag">SCI</span><span class="tp-tag">ABI / TBI</span><span class="tp-tag">MS</span><span class="tp-tag">Parkinsonism</span><span class="tp-tag">Falls risk</span><span class="tp-tag">Complex chronic pain</span>
+          </div>
+        </aside>
+        <div class="tp-path-card">
+          <h2>How the NDIS referral pathway works</h2>
+          <div class="tp-path-list">
+            <div class="tp-path-item"><span class="tp-num">1</span><div><strong>Referral or enquiry</strong><span>Referrer provides location, funding type, presenting concern and urgency.</span></div></div>
+            <div class="tp-path-item"><span class="tp-num">2</span><div><strong>Suitability check</strong><span>We confirm service area, availability, clinical fit, consent and funding pathway.</span></div></div>
+            <div class="tp-path-item"><span class="tp-num">3</span><div><strong>Initial assessment</strong><span>Assessment occurs at home or in the community so function and risk can be observed directly.</span></div></div>
+            <div class="tp-path-item"><span class="tp-num">4</span><div><strong>Plan and recommendations</strong><span>Therapy goals, carer education, equipment-related needs and reporting requirements are clarified.</span></div></div>
+            <div class="tp-path-item"><span class="tp-num">5</span><div><strong>Ongoing therapy or review</strong><span>Treatment, liaison, training, reporting or discharge planning continue as clinically appropriate.</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tp-section">
+      <div class="container">
+        <div class="text-center">
+          <h2>Referral information that helps</h2>
+          <p class="section-intro">A good referral does not need to be long, but these details help determine suitability quickly.</p>
+        </div>
+        <div class="tp-box-grid">
+          <div class="tp-box"><h3>Useful referral details</h3><ul><li>Participant suburb and preferred contact person.</li><li>Funding type: plan-managed or self-managed.</li><li>Main functional concern or reason for referral.</li><li>Relevant diagnoses, mobility status and key risks.</li><li>Whether a report, therapy block, training or review is required.</li></ul></div>
+          <div class="tp-box"><h3>Common therapy goals</h3><ul><li>Improve safe transfers and daily mobility.</li><li>Reduce falls risk and improve confidence with movement.</li><li>Support carer and support-worker routines.</li><li>Monitor physical decline or changing neurological presentation.</li><li>Provide clear, function-linked recommendations.</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tp-section bg-light">
+      <div class="container">
+        <div class="text-center"><h2>NDIS referral FAQs</h2><p class="section-intro">Expandable questions add some useful functionality without making the page cluttered.</p></div>
+        <div class="tp-faq">
+          <details open><summary>Do you see NDIS participants at home?</summary><p>Yes. Home and community visits are central to the service, especially when function, transfers, fatigue, equipment and safety need to be assessed in the person’s everyday environment.</p></details>
+          <details><summary>Do you accept NDIA-managed participants?</summary><p>Tandem Physio currently supports plan-managed and self-managed participants. NDIA-managed referrals can be discussed if registration or referral arrangements change in future.</p></details>
+          <details><summary>Can you provide reports?</summary><p>Yes, where clinically appropriate. Documentation can link impairments, activity limitations, participation restrictions, risk and therapy recommendations.</p></details>
+          <details><summary>How should a support coordinator refer?</summary><p>Use the referral page, email an enquiry or call directly. The most useful starting details are suburb, funding type, reason for referral, urgency and key risks.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="tp-cta">
+      <div class="container tp-cta-inner">
+        <div><h2>Need to discuss an NDIS referral?</h2><p>Use the online referral page or contact Tandem Physio directly to discuss suitability and availability.</p></div>
+        <div class="tp-cta-actions"><a href="refer.html" class="btn btn-light">Open referral page</a><a href="mailto:tandemphysionsw@gmail.com" class="btn btn-secondary">Email an enquiry</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <h3>Tandem Physio</h3>
+      <p>Empowering movement, together.</p>
+      <div class="footer-details">
+        <p>0410 048 142 | tandemphysionsw@gmail.com</p>
+        <p>Mobile physiotherapy across Western Sydney and The Hills District</p>
+      </div>
+      <div class="footer-small">
+        <p>&copy; 2026 Tandem Physio. All rights reserved. ABN registered.</p>
+        <p><a href="privacy.html">Privacy and referral information</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/site.js"></script>
+
+</body>
+</html>
