@@ -899,3 +899,26 @@ footer a {
     grid-template-columns: 1fr;
   }
 }
+
+<link rel="stylesheet" href="assets/site.css" />
+
+<style>
+  .nav-container {
+    min-height: 96px;
+  }
+
+  .logo img {
+    height: 74px;
+    width: auto;
+  }
+
+  @media (max-width: 640px) {
+    .nav-container {
+      min-height: 86px;
+    }
+
+    .logo img {
+      height: 64px;
+    }
+  }
+</style>
