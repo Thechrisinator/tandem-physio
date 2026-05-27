@@ -148,6 +148,19 @@
       line-height: 1.1;
     }
 
+    .refer-side-links {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .refer-side-links a {
+      color: #104563;
+      font-weight: 800;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
     .fallback-box {
       padding: 18px 28px 28px;
       background: #f4f7f6;
@@ -169,6 +182,7 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 22px;
       margin-top: 30px;
+      align-items: stretch;
     }
 
     .pathway-card {
@@ -177,15 +191,33 @@
       border-top: 4px solid #2A9D8F;
       border-radius: 16px;
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
-      padding: 24px;
+      padding: 26px;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 14px;
+    }
+
+    .pathway-card h3 {
+      margin-bottom: 0;
+    }
+
+    .pathway-card-section {
+      border-top: 1px solid #e3e9e7;
+      padding-top: 13px;
+      display: grid;
+      gap: 6px;
     }
 
     .pathway-card p {
       color: #5f6f73;
       margin-bottom: 0;
+    }
+
+    .pathway-card-section strong {
+      color: #104563;
+      font-size: 0.82rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
     }
 
     .pathway-card a {
@@ -194,6 +226,13 @@
       margin-top: auto;
       text-decoration: underline;
       text-underline-offset: 3px;
+    }
+
+    .pathway-card .btn {
+      align-self: flex-start;
+      color: #ffffff;
+      text-decoration: none;
+      margin-top: auto;
     }
 
     @media (max-width: 920px) {
@@ -278,23 +317,56 @@
       <div class="container">
         <div class="text-center">
           <h2 id="pathway-heading">Choose the pathway that best fits</h2>
-          <p class="section-intro">The same referral form can be used by participants, families, coordinators, case managers and treating teams.</p>
+          <p class="section-intro">The same referral form can be used by participants, families, coordinators, case managers and treating teams. Choose the pathway closest to the person making the referral.</p>
         </div>
         <div class="pathway-grid">
           <article class="pathway-card">
             <h3>Participant or family member</h3>
-            <p>Helpful details include the suburb, main mobility or daily function concern, funding pathway and preferred contact person.</p>
-            <a href="#referral-form">Go to referral form</a>
+            <div class="pathway-card-section">
+              <strong>Who this is for</strong>
+              <p>People seeking support for themselves, a family member or someone they help coordinate day to day.</p>
+            </div>
+            <div class="pathway-card-section">
+              <strong>Helpful information</strong>
+              <p>Suburb, funding pathway, main mobility or daily function concern, preferred contact person and any urgent safety issue.</p>
+            </div>
+            <div class="pathway-card-section">
+              <strong>Usually clarified next</strong>
+              <p>Service area, consent, availability, goals and whether mobile physiotherapy is likely to be suitable.</p>
+            </div>
+            <a href="#referral-form" class="btn">Continue to referral form</a>
           </article>
           <article class="pathway-card">
             <h3>Support coordinator or case manager</h3>
-            <p>Please include the funding type, broad referral reason, urgency, known risks and whether reporting or training may be needed.</p>
-            <a href="#referral-form">Go to referral form</a>
+            <div class="pathway-card-section">
+              <strong>Who this is for</strong>
+              <p>Coordinators and case managers checking fit, availability, reporting needs or therapy priorities before referral.</p>
+            </div>
+            <div class="pathway-card-section">
+              <strong>Helpful information</strong>
+              <p>Funding type, suburb, broad referral reason, urgency, known risks, consent status and whether reports or training may be needed.</p>
+            </div>
+            <div class="pathway-card-section">
+              <strong>Usually clarified next</strong>
+              <p>Referral suitability, communication preferences, approval requirements and the most useful first assessment focus.</p>
+            </div>
+            <a href="#referral-form" class="btn">Continue to referral form</a>
           </article>
           <article class="pathway-card">
             <h3>Provider or treating professional</h3>
-            <p>A concise summary of the functional issue, relevant precautions, current supports and consent status helps determine suitability.</p>
-            <a href="#referral-form">Go to referral form</a>
+            <div class="pathway-card-section">
+              <strong>Who this is for</strong>
+              <p>GPs, therapists, nurses, providers or treating teams seeking physiotherapy input for a shared client.</p>
+            </div>
+            <div class="pathway-card-section">
+              <strong>Helpful information</strong>
+              <p>Functional issue, relevant precautions, diagnosis context, current supports, equipment, key risks and consent to liaise.</p>
+            </div>
+            <div class="pathway-card-section">
+              <strong>Usually clarified next</strong>
+              <p>Role boundaries, communication needs, documentation requirements and whether the referral matches the mobile service scope.</p>
+            </div>
+            <a href="#referral-form" class="btn">Continue to referral form</a>
           </article>
         </div>
       </div>
@@ -342,6 +414,15 @@
             <div class="form-actions">
               <a href="mailto:tandemphysionsw@gmail.com" class="btn">Email</a>
               <a href="tel:0410048142" class="btn">Call</a>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px;">
+            <h3>Related information</h3>
+            <div class="refer-side-links" aria-label="Related referral information">
+              <a href="mobile-physiotherapy.html">Mobile physiotherapy and clinical approach</a>
+              <a href="ndis-physiotherapy.html">NDIS physiotherapy information</a>
+              <a href="icare-ltcs-physiotherapy.html">iCare / LTCS physiotherapy information</a>
             </div>
           </div>
         </aside>
