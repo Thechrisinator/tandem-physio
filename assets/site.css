@@ -327,7 +327,7 @@
     .service-area-banner {
       background:
         linear-gradient(rgba(244, 247, 246, 0.86), rgba(244, 247, 246, 0.86)),
-        url("assets/service-map.jpg");
+        url("service-map.jpg");
       background-size: cover;
       background-position: center;
       padding: 70px 0 92px;
@@ -899,26 +899,3 @@ footer a {
     grid-template-columns: 1fr;
   }
 }
-
-<link rel="stylesheet" href="assets/site.css" />
-
-<style>
-  .nav-container {
-    min-height: 104px;
-  }
-
-  .logo img {
-    height: 82px;
-    width: auto;
-  }
-
-  @media (max-width: 640px) {
-    .nav-container {
-      min-height: 92px;
-    }
-
-    .logo img {
-      height: 70px;
-    }
-  }
-</style>
