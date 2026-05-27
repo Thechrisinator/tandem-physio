@@ -959,7 +959,7 @@
       }
 
       body {
-        padding-bottom: 74px;
+        padding-bottom: calc(88px + env(safe-area-inset-bottom));
       }
 
       .section-heading-row {
