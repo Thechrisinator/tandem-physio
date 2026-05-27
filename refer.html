@@ -159,6 +159,43 @@
       margin-bottom: 14px;
     }
 
+    .pathway-section {
+      padding: 70px 0;
+      background: #ffffff;
+    }
+
+    .pathway-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .pathway-card {
+      background: #ffffff;
+      border: 1px solid rgba(16, 69, 99, 0.09);
+      border-top: 4px solid #2A9D8F;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .pathway-card p {
+      color: #5f6f73;
+      margin-bottom: 0;
+    }
+
+    .pathway-card a {
+      color: #104563;
+      font-weight: 800;
+      margin-top: auto;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
     @media (max-width: 920px) {
       .refer-hero-grid,
       .refer-layout {
@@ -171,6 +208,10 @@
 
       .google-form-frame {
         height: 1050px;
+      }
+
+      .pathway-grid {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -230,6 +271,32 @@
             <li>Avoid unnecessary sensitive information initially.</li>
           </ul>
         </aside>
+      </div>
+    </section>
+
+    <section class="pathway-section" aria-labelledby="pathway-heading">
+      <div class="container">
+        <div class="text-center">
+          <h2 id="pathway-heading">Choose the pathway that best fits</h2>
+          <p class="section-intro">The same referral form can be used by participants, families, coordinators, case managers and treating teams.</p>
+        </div>
+        <div class="pathway-grid">
+          <article class="pathway-card">
+            <h3>Participant or family member</h3>
+            <p>Helpful details include the suburb, main mobility or daily function concern, funding pathway and preferred contact person.</p>
+            <a href="#referral-form">Go to referral form</a>
+          </article>
+          <article class="pathway-card">
+            <h3>Support coordinator or case manager</h3>
+            <p>Please include the funding type, broad referral reason, urgency, known risks and whether reporting or training may be needed.</p>
+            <a href="#referral-form">Go to referral form</a>
+          </article>
+          <article class="pathway-card">
+            <h3>Provider or treating professional</h3>
+            <p>A concise summary of the functional issue, relevant precautions, current supports and consent status helps determine suitability.</p>
+            <a href="#referral-form">Go to referral form</a>
+          </article>
+        </div>
       </div>
     </section>
 
