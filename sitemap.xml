@@ -4,10 +4,16 @@
     <loc>https://tandemphysio.com.au/</loc>
   </url>
   <url>
-    <loc>https://tandemphysio.com.au/refer.html</loc>
+    <loc>https://tandemphysio.com.au/about.html</loc>
+  </url>
+  <url>
+    <loc>https://tandemphysio.com.au/clinical-focus.html</loc>
   </url>
   <url>
     <loc>https://tandemphysio.com.au/mobile-physiotherapy.html</loc>
+  </url>
+  <url>
+    <loc>https://tandemphysio.com.au/service-areas.html</loc>
   </url>
   <url>
     <loc>https://tandemphysio.com.au/ndis-physiotherapy.html</loc>
@@ -16,9 +22,12 @@
     <loc>https://tandemphysio.com.au/icare-ltcs-physiotherapy.html</loc>
   </url>
   <url>
-    <loc>https://tandemphysio.com.au/privacy.html</loc>
+    <loc>https://tandemphysio.com.au/refer.html</loc>
   </url>
   <url>
     <loc>https://tandemphysio.com.au/faq.html</loc>
+  </url>
+  <url>
+    <loc>https://tandemphysio.com.au/privacy.html</loc>
   </url>
 </urlset>
