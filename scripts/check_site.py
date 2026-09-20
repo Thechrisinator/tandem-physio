@@ -140,16 +140,23 @@ def main():
                 json.loads(schema, parse_constant=reject_constant)
             except ValueError as exc:
                 fail(name, f"invalid JSON-LD: {exc}")
+        if name in UTILITY_PAGES:
+            directives = page.meta.get("robots", [])
+            if len(directives) != 1 or {value.strip().lower() for value in
+                                        directives[0].split(",")} != {"noindex", "follow"}:
+                fail(name, "metadata robots: require noindex, follow")
         if name not in PAGES:
             continue
         canonical = DOMAIN + ("" if name == "index.html" else name)
         fields = {"title": page.titles, "canonical": page.canonicals}
         fields.update({key: page.meta.get(key, []) for key in (
-            "description", "og:title", "og:description", "og:type", "og:url"
+            "description", "og:title", "og:description", "og:type", "og:url", "og:image"
         )})
         for key, values in fields.items():
             if len(values) != 1 or not values[0].strip():
                 fail(name, f"metadata {key}: require exactly one nonempty value")
+        if fields["og:image"] != [DOMAIN + "assets/og-image.png"]:
+            fail(name, "metadata og:image: expected shared HTTPS apex image")
         for key in ("canonical", "og:url"):
             if fields[key] != [canonical]:
                 fail(name, f"metadata {key}: expected {canonical}")

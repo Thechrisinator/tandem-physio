@@ -37,6 +37,9 @@ def main():
             assert result.returncode == 1 and message in result.stderr, result
             path.write_text(original)
         replacements = [
+            ("about.html", '<meta property="og:image"', '<meta property="omitted-image"', "metadata og:image"),
+            ("thanks.html", '<meta name="robots"', '<meta name="omitted-robots"', "metadata robots"),
+            ("404.html", "noindex, follow", "index, follow", "metadata robots"),
             ("about.html", '<title>', '<!--<title>', "metadata title"),
             ("sitemap.xml", "https://tandemphysio.com.au/", "http://tandemphysio.com.au/", "sitemap.xml"),
             ("robots.txt", "https://", "http://", "robots.txt"),
