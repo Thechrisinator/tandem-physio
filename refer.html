@@ -13,6 +13,7 @@
   <meta property="og:description" content="Referral information for mobile neurological, complex disability, NDIS, iCare/LTCS and related physiotherapy services across Western Sydney." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tandemphysio.com.au/refer.html" />
+  <meta property="og:image" content="https://tandemphysio.com.au/assets/og-image.png" />
 
   <style>
     .refer-hero {
@@ -46,10 +47,13 @@
       box-shadow: 0 18px 40px rgba(0, 0, 0, 0.20);
     }
 
-    .refer-panel h3 {
+    .refer-panel h2 {
+      font-size: 1.3rem;
       color: #104563;
       margin-bottom: 12px;
     }
+
+    .refer-panel h2::after { display: none; }
 
     .refer-panel p,
     .refer-panel li {
@@ -72,7 +76,7 @@
       content: "✓";
       position: absolute;
       left: 0;
-      color: #2A9D8F;
+      color: var(--accent-teal);
       font-weight: 900;
     }
 
@@ -146,7 +150,7 @@
       position: absolute;
       left: 3px;
       top: 0;
-      color: #2A9D8F;
+      color: var(--accent-teal);
       font-weight: 900;
       font-size: 1.3rem;
       line-height: 1.1;
@@ -275,7 +279,7 @@
   <header>
     <div class="container nav-container">
       <a href="index.html" class="logo" aria-label="Tandem Physio home">
-        <img src="assets/logo.jpg" alt="Tandem Physio" />
+        <img src="assets/logo.jpg" width="660" height="210" alt="Tandem Physio" />
       </a>
       <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">☰</button>
       <nav id="site-nav" aria-label="Main navigation">
@@ -298,17 +302,17 @@
         <div>
           <h1>Refer a client</h1>
           <p class="hero-subtitle">
-            Use the referral form below for NDIS, iCare/LTCS, workers compensation, DVA, Home Care Package or private physiotherapy enquiries across Western Sydney and The Hills District.
+            Use the referral form below for self-managed or plan-managed NDIS, iCare/LTCS, NSW workers compensation, DVA, Support at Home or private physiotherapy enquiries across Western Sydney and The Hills District. Tandem is not an NDIS-registered provider. Support at Home enquiries are welcome where services can be arranged through the participant’s registered provider, including under an applicable self-management arrangement; Tandem is not a registered Support at Home provider. iCare/LTCS service commencement is subject to relevant scheme approval where required. NSW workers compensation referrals are subject to applicable insurer/scheme requirements.
           </p>
           <div class="hero-actions">
-            <a href="#referral-form" class="btn">Go to referral form</a>
-            <a href="tel:0410048142" class="btn btn-secondary">Call Chris</a>
+            <a href="#referral-form" class="btn">Make a formal referral</a>
+            <a href="#check-suitability" class="btn btn-secondary">Check suitability</a>
           </div>
         </div>
 
         <aside class="refer-panel">
-          <h3>Before submitting</h3>
-          <p>Please confirm the client or authorised representative has consented to the referral and relevant information sharing.</p>
+          <h2>Before submitting</h2>
+          <p>You must be authorised to provide this referral information and, where required, have the participant’s consent to share it with Tandem Physio. We may verify authority before proceeding.</p>
           <ul>
             <li>Include the suburb and funding pathway.</li>
             <li>Briefly describe the functional concern.</li>
@@ -318,10 +322,31 @@
       </div>
     </section>
 
+    <section id="check-suitability" class="section-padding bg-light" aria-labelledby="suitability-heading">
+      <div class="container">
+        <div class="page-card">
+          <h2 id="suitability-heading">Check suitability before referring</h2>
+          <p>Not sure whether Tandem is the right fit? Participants, families and professionals can check suitability before making a formal referral.</p>
+          <p>For an initial enquiry, share only:</p>
+          <ul class="check-list">
+            <li>The suburb or general location.</li>
+            <li>The funding pathway, if known.</li>
+            <li>A brief functional reason for the enquiry, such as help with mobility or daily activities.</li>
+            <li>Your role in the enquiry, such as participant, family member or coordinator.</li>
+            <li>Your preferred return contact.</li>
+          </ul>
+          <p>You do not need to provide the participant’s full name, diagnosis, medical history or reports. Avoid unnecessary participant-identifying or sensitive clinical information. No formal referral is needed to check suitability.</p>
+          <p>Call <a href="tel:0410048142">0410 048 142</a> or email <a href="mailto:tandemphysionsw@gmail.com">tandemphysionsw@gmail.com</a>. Please keep email enquiries brief; email is not a secure clinical-record system.</p>
+          <p>Chris can discuss likely service fit and the next step with you. A suitability enquiry does not confirm clinical suitability, acceptance or an appointment.</p>
+          <p>Ready to refer? <a href="#referral-form">Make a formal referral</a>.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="pathway-section" aria-labelledby="pathway-heading">
       <div class="container">
         <div class="text-center">
-          <h2 id="pathway-heading">Choose the pathway that best fits</h2>
+          <h2 id="pathway-heading">Preparing a formal referral</h2>
           <p class="section-intro">The same referral form can be used by participants, families, coordinators, case managers and treating teams. Choose the pathway closest to the person making the referral.</p>
         </div>
         <div class="pathway-grid">
@@ -345,7 +370,7 @@
             <h3>Support coordinator or case manager</h3>
             <div class="pathway-card-section">
               <strong>Who this is for</strong>
-              <p>Coordinators and case managers checking fit, availability, reporting needs or therapy priorities before referral.</p>
+              <p>Coordinators and case managers making a formal referral for physiotherapy, reporting or therapy support.</p>
             </div>
             <div class="pathway-card-section">
               <strong>Helpful information</strong>
@@ -381,25 +406,26 @@
       <div class="container refer-layout">
         <div class="form-card">
           <div class="form-card-header">
-            <h2>Online referral form</h2>
-            <p>If the embedded form is difficult to use on your device, open it directly in a new tab.</p>
-            <p>Please avoid including unnecessary sensitive information at the first enquiry stage. For more information, see <a href="privacy.html">Privacy and referral information</a>.</p>
+            <h2>Formal referral form</h2>
+            <p>We aim to respond within 1 business day. If the embedded form is difficult to use on your device, open it directly in a new tab.</p>
+            <p>Provide only the information reasonably necessary to assess or progress this formal referral. Avoid unnecessary sensitive details or reports. Before using the form, read the <a href="privacy.html#referral-collection-notice">referral collection notice</a> and the <a href="privacy.html#privacy-policy">full Privacy Policy</a>. If referring someone else, please make the notice available to them.</p>
+            <p>Submitting a referral does not guarantee acceptance or an appointment.</p>
             <div class="form-actions">
-              <a href="https://forms.gle/7L3BrBQjdJgJ8eA27" target="_blank" rel="noopener" class="btn">Open form in new tab</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeiC4yIpMpO-DbDx9PADVwjdlSIPEBOmPGL-0z3TUd7VoOfPg/viewform" target="_blank" rel="noopener" class="btn">Open form in new tab</a>
             </div>
           </div>
 
           <iframe
             class="google-form-frame"
-            src="https://forms.gle/7L3BrBQjdJgJ8eA27"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeiC4yIpMpO-DbDx9PADVwjdlSIPEBOmPGL-0z3TUd7VoOfPg/viewform?embedded=true"
             title="Tandem Physio referral form"
             loading="lazy">
             Loading referral form…
           </iframe>
 
           <div class="fallback-box">
-            <p>If the embedded form does not load on your device, use the fallback button below.</p>
-            <a href="https://forms.gle/7L3BrBQjdJgJ8eA27" target="_blank" rel="noopener" class="btn">Open form in new tab</a>
+            <p>If the embedded form does not load on your device, read the <a href="privacy.html#referral-collection-notice">referral collection notice</a> and use the fallback button below.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeiC4yIpMpO-DbDx9PADVwjdlSIPEBOmPGL-0z3TUd7VoOfPg/viewform" target="_blank" rel="noopener" class="btn">Open form in new tab</a>
           </div>
         </div>
 
@@ -407,7 +433,7 @@
           <h3>Useful referral details</h3>
           <ul>
             <li>Client suburb and preferred contact person.</li>
-            <li>Funding type: NDIS, iCare/LTCS, workers compensation, DVA, HCP or private.</li>
+            <li>Funding type: self-managed or plan-managed NDIS, iCare/LTCS, NSW workers compensation, DVA, Support at Home or private.</li>
             <li>Main reason for referral.</li>
             <li>Current mobility, transfer, falls, respiratory or functional concern.</li>
             <li>Known risks, urgency or access issues.</li>
@@ -416,7 +442,7 @@
 
           <div style="margin-top: 24px;">
             <h3>Alternative contact</h3>
-            <p style="color: #5f6f73;">Email or call if you would prefer to discuss suitability before submitting a formal referral.</p>
+            <p style="color: #5f6f73;">Not ready to make a formal referral? <a href="#check-suitability">Check suitability first</a>, with only brief, low-information details.</p>
             <div class="form-actions">
               <a href="mailto:tandemphysionsw@gmail.com" class="btn">Email</a>
               <a href="tel:0410048142" class="btn">Call</a>
@@ -428,7 +454,7 @@
             <div class="refer-side-links" aria-label="Related referral information">
               <a href="mobile-physiotherapy.html">Mobile physiotherapy and clinical approach</a>
               <a href="faq.html">Referral FAQs</a>
-              <a href="privacy.html">Privacy and referral information</a>
+              <a href="privacy.html">Privacy Policy</a>
               <a href="ndis-physiotherapy.html">NDIS physiotherapy information</a>
               <a href="icare-ltcs-physiotherapy.html">iCare / LTCS physiotherapy information</a>
             </div>
@@ -457,14 +483,14 @@
           <ul>
             <li><a href="refer.html">Refer a client</a></li>
             <li><a href="faq.html">FAQs</a></li>
-            <li><a href="privacy.html">Privacy and referral information</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
           </ul>
         </div>
         <div class="footer-column">
           <h4>Service area</h4>
           <ul>
             <li><a href="service-areas.html">Western Sydney and The Hills District</a></li>
-            <li><a href="refer.html">Check service availability</a></li>
+            <li><a href="refer.html#check-suitability">Check service availability</a></li>
           </ul>
         </div>
         <div class="footer-column">
