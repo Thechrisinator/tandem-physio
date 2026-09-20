@@ -17,8 +17,8 @@ The ten substantive pages listed in `PAGES` must each have exactly one nonempty
 title, description, canonical URL and Open Graph title, description, type and
 URL. Canonical and Open Graph URLs must match the page's HTTPS apex URL.
 The sitemap must list exactly those ten URLs, and robots.txt must reference
-the HTTPS sitemap exactly once. `thanks.html` is explicitly exempt from
-metadata/sitemap requirements, but receives the structural checks. New root
+the HTTPS sitemap exactly once. `thanks.html` and `404.html` are explicitly exempt from
+metadata/sitemap requirements, but receive the structural checks. New root
 HTML pages must be classified explicitly.
 
 This is not an HTML/CSS validator, accessibility audit, schema semantics check,

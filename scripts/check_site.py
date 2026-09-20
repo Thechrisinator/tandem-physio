@@ -16,7 +16,7 @@ PAGES = (
     "service-areas.html", "ndis-physiotherapy.html", "icare-ltcs-physiotherapy.html",
     "refer.html", "faq.html", "privacy.html",
 )
-UTILITY_PAGES = {"thanks.html"}
+UTILITY_PAGES = {"thanks.html", "404.html"}
 
 
 class Page(HTMLParser):
