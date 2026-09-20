@@ -154,7 +154,7 @@
   }
   .tp-num {
     width: 36px; height: 36px; border-radius: 999px;
-    background: #2A9D8F; color: #fff;
+    background: var(--accent-teal); color: #fff;
     display: inline-flex; align-items: center; justify-content: center;
     font-weight: 900;
   }
@@ -164,13 +164,13 @@
   .tp-box { padding: 28px; }
   .tp-box ul { list-style: none; display: grid; gap: 12px; margin-top: 14px; }
   .tp-box li { position: relative; padding-left: 28px; }
-  .tp-box li::before { content: "✓"; position: absolute; left: 0; color: #2A9D8F; font-weight: 900; }
+  .tp-box li::before { content: "✓"; position: absolute; left: 0; color: var(--accent-teal); font-weight: 900; }
   .tp-faq { display: grid; gap: 14px; max-width: 920px; margin: 30px auto 0; }
   .tp-faq details { overflow: hidden; }
   .tp-faq summary {
     list-style: none;
     cursor: pointer;
-    padding: 21px 24px;
+    padding: 21px 54px 21px 24px;
     color: #104563;
     font-weight: 800;
     position: relative;
@@ -182,7 +182,7 @@
     right: 24px;
     top: 50%;
     transform: translateY(-50%);
-    color: #2A9D8F;
+    color: var(--accent-teal);
     font-size: 1.3rem;
   }
   .tp-faq details[open] summary::after { content: "–"; }
