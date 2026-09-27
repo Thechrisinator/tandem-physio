@@ -1404,6 +1404,10 @@ nav a {
   .about-detail {
     grid-template-columns: 1fr;
   }
+
+  .about-detail .profile-photo-container {
+    max-width: 360px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1517,6 +1521,7 @@ body :is(.tp-card, .tp-feature, .tp-box, .pathway-card) {
   transform: none;
   transition: none;
 }
+body .tp-feature:hover { transform: none; box-shadow: none; }
 body:not(.home-page) :is(.pillar-card, .location-item),
 body :is(.tp-card, .tp-feature, .tp-box, .pathway-card) { padding: 24px 0; }
 body:not(.home-page) .service-card { border-top: 0; }
