@@ -9,6 +9,7 @@
   <link rel="canonical" href="https://tandemphysio.com.au/" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="stylesheet" href="assets/site.css" />
+  <link rel="stylesheet" href="assets/home.css" />
   <meta property="og:title" content="Tandem Physio | Mobile Neuro & Complex Disability Physiotherapy" />
   <meta property="og:description" content="Mobile neurological and complex disability physiotherapy across Western Sydney and The Hills District." />
   <meta property="og:type" content="website" />
@@ -28,8 +29,9 @@
     "address": { "@type": "PostalAddress", "addressRegion": "NSW", "addressCountry": "AU" }
   }
   </script>
+  <link rel="stylesheet" href="assets/visuals.css" />
 </head>
-<body>
+<body class="home-page">
   <a href="#main" class="skip-link">Skip to main content</a>
   <header>
     <div class="container nav-container">
@@ -54,7 +56,7 @@
   <main id="main">
     <section class="hero v2-hero" id="home">
       <div class="container hero-grid">
-        <div class="hero-content" data-reveal>
+        <div class="hero-content">
           <p class="hero-eyebrow">Western Sydney and The Hills District</p>
           <h1>Mobile neurological and complex disability physiotherapy across Western Sydney</h1>
           <p class="hero-subtitle">Home and community-based physiotherapy for people with neurological, respiratory, mobility and complex disability-related needs.</p>
@@ -64,23 +66,29 @@
             <a href="tel:0410048142" class="btn btn-secondary">Call Chris</a>
           </div>
         </div>
-        <aside class="hero-image-card hero-referral-card" aria-label="Referral snapshot" data-reveal>
-          <img src="assets/hero-logo.png" width="1200" height="680" alt="" />
-          <div class="hero-referral-content">
-            <h2>Mobile physiotherapy with a clinical focus</h2>
-            <p>Assessment and therapy that consider function, risk, environment and care-team needs together.</p>
-            <div class="hero-referral-actions" aria-label="Homepage quick links">
-              <a href="clinical-focus.html">Clinical focus areas</a>
-              <a href="mobile-physiotherapy.html">Clinical approach</a>
-              <a href="service-areas.html">View service areas</a>
-            </div>
-          </div>
-        </aside>
+        <div class="hero-artwork">
+          <img src="assets/home-visit-physiotherapy.webp" srcset="assets/home-visit-physiotherapy-768.webp 768w, assets/home-visit-physiotherapy.webp 1536w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1220px) 50vw, 600px" width="1536" height="1024" alt="Illustration of a physiotherapist supporting an older man using a wheeled walker at home." loading="eager" fetchpriority="high" />
+        </div>
       </div>
     </section>
+    <aside class="hero-summary" aria-label="Referral snapshot">
+      <div class="container">
+        <div class="hero-referral-content">
+          <div>
+            <h2>Mobile physiotherapy with a clinical focus</h2>
+            <p>Assessment and therapy that consider function, risk, environment and care-team needs together.</p>
+          </div>
+          <div class="hero-referral-actions" aria-label="Homepage quick links">
+            <a href="clinical-focus.html">Clinical focus areas</a>
+            <a href="mobile-physiotherapy.html">Clinical approach</a>
+            <a href="service-areas.html">View service areas</a>
+          </div>
+        </div>
+      </div>
+    </aside>
 
     <section id="best-fit" class="section-padding best-fit-section" aria-labelledby="best-fit-heading">
-      <div class="container">
+      <div class="container fit-layout">
         <div class="section-heading-row">
           <div>
             <p class="section-kicker">Quick suitability snapshot</p>
@@ -90,10 +98,10 @@
           <a href="refer.html" class="btn btn-compact">Refer a client</a>
         </div>
         <div class="best-fit-grid compact-grid">
-          <article class="fit-card" data-reveal><h3>Neurological and progressive conditions</h3><p>Stroke, MND, ABI, TBI, spinal cord injury, Parkinsonism, MS and changing neurological function.</p></article>
-          <article class="fit-card" data-reveal><h3>Complex disability and high-support needs</h3><p>Support needs where routines, positioning, equipment, safety and care-team input overlap.</p></article>
-          <article class="fit-card" data-reveal><h3>Mobility, transfers and falls risk</h3><p>Walking, transfer safety, mobility aids, access barriers and falls-risk concerns.</p></article>
-          <article class="fit-card" data-reveal><h3>Respiratory decline, fatigue or carer training needs</h3><p>Changing capacity, pacing, respiratory considerations or support-worker education needs.</p></article>
+          <article class="fit-card"><h3>Neurological and progressive conditions</h3><p>Stroke, MND, ABI, TBI, spinal cord injury, Parkinsonism, MS and changing neurological function.</p></article>
+          <article class="fit-card"><h3>Complex disability and high-support needs</h3><p>Support needs where routines, positioning, equipment, safety and care-team input overlap.</p></article>
+          <article class="fit-card"><h3>Mobility, transfers and falls risk</h3><p>Walking, transfer safety, mobility aids, access barriers and falls-risk concerns.</p></article>
+          <article class="fit-card"><h3>Respiratory decline, fatigue or carer training needs</h3><p>Changing capacity, pacing, respiratory considerations or support-worker education needs.</p></article>
         </div>
       </div>
     </section>
@@ -108,16 +116,29 @@
           </div>
           <a href="mobile-physiotherapy.html" class="btn btn-compact">Clinical approach</a>
         </div>
-        <div class="pillars-grid">
-          <div class="pillar-card" data-reveal><h3>Transfers at home</h3><p>Review bed, chair and toilet transfers in the space and with the supports actually used.</p></div>
-          <div class="pillar-card" data-reveal><h3>Equipment and access</h3><p>Check how mobility aids, positioning and access barriers affect everyday movement.</p></div>
-          <div class="pillar-card" data-reveal><h3>Fatigue and routines</h3><p>Assess pacing and activity tolerance around the person’s usual tasks.</p></div>
-          <div class="pillar-card" data-reveal><h3>Care-team carryover</h3><p>Share practical strategies, training and documentation with relevant people when consent is in place.</p></div>
+        <div class="function-layout">
+          <figure class="home-illustration">
+            <img src="assets/function-at-home.webp" srcset="assets/function-at-home-768.webp 768w, assets/function-at-home.webp 1536w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1220px) 62vw, 730px" width="1536" height="1024" alt="Illustrated accessible-home cutaway with a wheelchair user, physiotherapist, bedroom, bathroom, living area and entrance ramp." loading="lazy" decoding="async" />
+            <figcaption>
+              <dl class="home-image-labels">
+                <div><dt>Bedroom</dt><dd>Bed mobility, positioning and safe transfers</dd></div>
+                <div><dt>Bathroom</dt><dd>Access, equipment and safe hygiene routines</dd></div>
+                <div><dt>Living area</dt><dd>Daily activities, seating, transfers and participation</dd></div>
+                <div><dt>Access</dt><dd>Entrances, ramps, stairs and home modifications</dd></div>
+              </dl>
+            </figcaption>
+          </figure>
+          <div class="pillars-grid">
+            <div class="pillar-card"><h3>Transfers at home</h3><p>Review bed, chair and toilet transfers in the space and with the supports actually used.</p></div>
+            <div class="pillar-card"><h3>Equipment and access</h3><p>Check how mobility aids, positioning and access barriers affect everyday movement.</p></div>
+            <div class="pillar-card"><h3>Fatigue and routines</h3><p>Assess pacing and activity tolerance around the person’s usual tasks.</p></div>
+            <div class="pillar-card"><h3>Care-team carryover</h3><p>Share practical strategies, training and documentation with relevant people when consent is in place.</p></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section-padding bg-light" aria-labelledby="support-heading">
+    <section class="section-padding service-pathways" aria-labelledby="support-heading">
       <div class="container">
         <div class="text-center">
           <p class="section-kicker">Service pathways</p>
@@ -125,15 +146,15 @@
           <p class="section-intro">Assessment, therapy and care-team support, guided by clinical need.</p>
         </div>
         <div class="resources-grid">
-          <article class="resource-card" data-reveal>
+          <article class="resource-card">
             <h3>Assessment and recommendations</h3>
             <p>Functional review, therapy planning and equipment-related recommendations.</p>
           </article>
-          <article class="resource-card" data-reveal>
+          <article class="resource-card">
             <h3>Ongoing therapy and capacity building</h3>
             <p>Rehabilitation, mobility practice, fatigue management and respiratory monitoring where clinically appropriate.</p>
           </article>
-          <article class="resource-card" data-reveal>
+          <article class="resource-card">
             <h3>Review, training and documentation</h3>
             <p>Support-worker education, risk clarification and function-linked reports where clinically appropriate.</p>
           </article>
@@ -145,27 +166,35 @@
       </div>
     </section>
 
-    <section class="section-padding bg-light" aria-labelledby="useful-links-heading">
+    <section class="section-padding funding-pathways" aria-labelledby="useful-links-heading">
       <div class="container">
         <div class="text-center">
           <p class="section-kicker">Funding pathways</p>
           <h2 id="useful-links-heading">Funding and referral pathways</h2>
           <p class="section-intro">Service fit, billing arrangements and availability need to be confirmed. Follow the links for pathway details.</p>
         </div>
+        <ul class="funding-identifiers" aria-label="Funding pathways at a glance" data-visual-addition>
+          <li><svg class="visual-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false"><circle cx="16" cy="14" r="6"/><circle cx="35" cy="17" r="5"/><path d="M4 40v-5c0-13 24-13 24 0v5M30 28c9-3 15 3 15 10"/></svg><span>NDIS</span></li>
+          <li><svg class="visual-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false"><path d="m19 29 10-10M17 32l-3 3a8 8 0 0 1-11-11l10-10a8 8 0 0 1 11 0M31 16l3-3a8 8 0 0 1 11 11L35 34a8 8 0 0 1-11 0"/></svg><span>iCare / LTCS</span></li>
+          <li><svg class="visual-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false"><rect x="5" y="15" width="38" height="27" rx="2"/><path d="M16 15V7h16v8M5 26h38M21 24v6h6v-6"/></svg><span>NSW Workers Compensation</span></li>
+          <li><svg class="visual-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false"><path d="M12 4h17l9 9v31H12zM29 4v10h9M19 23h12M19 30h12M19 37h7"/></svg><span>DVA</span></li>
+          <li><svg class="visual-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false"><path d="m4 22 20-17 20 17M10 19v24h28V19M20 43V29h9v14"/></svg><span>Support at Home</span></li>
+          <li><svg class="visual-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false"><rect x="5" y="10" width="38" height="30" rx="3"/><path d="M5 19h38M12 31h10M29 31h7"/></svg><span>Private / self-funded</span></li>
+        </ul>
         <div class="resources-grid">
-          <a class="resource-card link-card" href="faq.html" data-reveal><h3>DVA, private and Support at Home</h3><p>DVA and private referrals are accepted. Support at Home enquiries are welcome where services can be arranged through the participant’s registered provider, including under an applicable self-management arrangement.</p><p>Tandem is not a registered Support at Home provider. Read FAQs for details.</p></a>
-          <a class="resource-card link-card" href="ndis-physiotherapy.html" data-reveal><h3>NDIS physiotherapy</h3><p>Self-managed and plan-managed NDIS participants only. Tandem is not an NDIS-registered provider.</p></a>
-          <a class="resource-card link-card" href="icare-ltcs-physiotherapy.html" data-reveal><h3>iCare / LTCS physiotherapy</h3><p>iCare/LTCS enquiries are welcome, with commencement subject to relevant scheme approval where required. NSW workers compensation referrals are subject to applicable insurer/scheme requirements.</p></a>
+          <a class="resource-card link-card" href="faq.html"><h3>DVA, private and Support at Home</h3><p>DVA and private referrals are accepted. Support at Home enquiries are welcome where services can be arranged through the participant’s registered provider, including under an applicable self-management arrangement.</p><p>Tandem is not a registered Support at Home provider. Read FAQs for details.</p></a>
+          <a class="resource-card link-card" href="ndis-physiotherapy.html"><h3>NDIS physiotherapy</h3><p>Self-managed and plan-managed NDIS participants only. Tandem is not an NDIS-registered provider.</p></a>
+          <a class="resource-card link-card" href="icare-ltcs-physiotherapy.html"><h3>iCare / LTCS physiotherapy</h3><p>iCare/LTCS enquiries are welcome, with commencement subject to relevant scheme approval where required. NSW workers compensation referrals are subject to applicable insurer/scheme requirements.</p></a>
         </div>
       </div>
     </section>
 
     <section id="about" class="section-padding" aria-labelledby="about-heading">
       <div class="container split-grid about-snapshot">
-        <div class="profile-photo-container" data-reveal>
+        <div class="profile-photo-container">
           <img src="assets/Headshot-Tandem-Physio.jpg" width="1200" height="1374" alt="Chris Burgess, Principal Physiotherapist at Tandem Physio" loading="lazy" />
         </div>
-        <div data-reveal>
+        <div>
           <p class="section-kicker">Clinician-led care</p>
           <h2 id="about-heading">About Chris Burgess</h2>
           <p class="section-intro">Chris Burgess is Tandem’s Principal Physiotherapist and an Ahpra-registered physiotherapist. He has worked in community neurological and complex disability physiotherapy since 2022.</p>
@@ -179,7 +208,7 @@
 
     <section id="service-area" class="section-padding bg-light" aria-labelledby="service-area-heading">
       <div class="container split-grid snapshot-section">
-        <div data-reveal>
+        <div>
           <p class="section-kicker">Service area</p>
           <h2 id="service-area-heading">Western Sydney and The Hills District</h2>
           <p class="section-intro">Tandem Physio provides mobile physiotherapy across commonly considered areas of Western Sydney and The Hills District. Availability depends on location, timing, clinical fit, funding pathway and current capacity.</p>
@@ -188,7 +217,7 @@
             <a href="refer.html#check-suitability" class="btn">Check suitability</a>
           </div>
         </div>
-        <div class="highlight-box area-snapshot" data-reveal>
+        <div class="highlight-box area-snapshot">
           <h3>Commonly considered areas</h3>
           <p>Blacktown, Parramatta, Liverpool, Fairfield and The Hills District. See the service-area page for other commonly considered suburbs.</p>
         </div>
@@ -196,7 +225,7 @@
     </section>
 
     <section id="contact" class="section-padding referral-cta-section" aria-labelledby="contact-heading">
-      <div class="container referral-content" data-reveal>
+      <div class="container referral-content">
         <h2 id="contact-heading">Ready to discuss a referral?</h2>
         <p>Use the referral page for structured information, or call or email if you need to clarify suitability first. Please avoid including unnecessary sensitive information at the first enquiry stage.</p>
         <div class="form-actions">
