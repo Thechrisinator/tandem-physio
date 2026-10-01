@@ -15,6 +15,13 @@ PAGES = (
     "index.html", "about.html", "clinical-focus.html", "mobile-physiotherapy.html",
     "service-areas.html", "ndis-physiotherapy.html", "icare-ltcs-physiotherapy.html",
     "refer.html", "faq.html", "privacy.html", "mnd-physiotherapy.html",
+    "stroke-physiotherapy.html",
+    "spinal-cord-injury-physiotherapy.html",
+    "abi-tbi-physiotherapy.html",
+    "multiple-sclerosis-physiotherapy.html",
+    "parkinsons-physiotherapy.html",
+    "falls-prevention-physiotherapy.html",
+    "complex-chronic-pain-physiotherapy.html",
 )
 UTILITY_PAGES = {"thanks.html", "404.html"}
 
@@ -171,7 +178,7 @@ def main():
         ns = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
         urls = [node.text for node in sitemap.findall(f"{ns}url/{ns}loc")]
         if sitemap.tag != ns + "urlset" or len(urls) != len(PAGES) or set(urls) != canonical_urls:
-            fail("sitemap.xml", "must contain exactly the ten substantive canonical HTTPS URLs")
+            fail("sitemap.xml", "must contain exactly the substantive canonical HTTPS URLs")
     except (OSError, ElementTree.ParseError) as exc:
         fail("sitemap.xml", str(exc))
     try:
