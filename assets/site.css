@@ -1344,6 +1344,8 @@ nav a {
 .form-card-header a:not(.btn),
 .page-card a:not(.btn),
 main a[href="mnd-physiotherapy.html"],
+main a.content-link,
+main a.tp-tag,
 .privacy-note a {
   color: var(--primary-navy);
   font-weight: 800;
