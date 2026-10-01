@@ -1343,6 +1343,7 @@ nav a {
 
 .form-card-header a:not(.btn),
 .page-card a:not(.btn),
+main a[href="mnd-physiotherapy.html"],
 .privacy-note a {
   color: var(--primary-navy);
   font-weight: 800;
