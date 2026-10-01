@@ -14,7 +14,7 @@ DOMAIN = "https://tandemphysio.com.au/"
 PAGES = (
     "index.html", "about.html", "clinical-focus.html", "mobile-physiotherapy.html",
     "service-areas.html", "ndis-physiotherapy.html", "icare-ltcs-physiotherapy.html",
-    "refer.html", "faq.html", "privacy.html",
+    "refer.html", "faq.html", "privacy.html", "mnd-physiotherapy.html",
 )
 UTILITY_PAGES = {"thanks.html", "404.html"}
 
