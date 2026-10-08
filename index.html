@@ -25,7 +25,26 @@
     "telephone": "+61410048142",
     "email": "referrals@tandemphysio.com.au",
     "areaServed": ["Western Sydney", "The Hills District", "Penrith", "Blacktown", "Parramatta", "Liverpool", "Fairfield"],
-    "medicalSpecialty": ["Physiotherapy", "Neurological Rehabilitation", "Complex Disability Physiotherapy"],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "17:00",
+        "closes": "20:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:30",
+        "closes": "18:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "00:00",
+        "closes": "00:00"
+      }
+    ],
     "address": { "@type": "PostalAddress", "addressRegion": "NSW", "addressCountry": "AU" }
   }
   </script>
@@ -182,9 +201,9 @@
           <li><svg class="visual-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false"><rect x="5" y="10" width="38" height="30" rx="3"/><path d="M5 19h38M12 31h10M29 31h7"/></svg><span>Private / self-funded</span></li>
         </ul>
         <div class="resources-grid">
-          <a class="resource-card link-card" href="faq.html"><h3>DVA, private and Support at Home</h3><p>DVA and private referrals are accepted. Support at Home enquiries are welcome where services can be arranged through the participant’s registered provider, including under an applicable self-management arrangement.</p><p>Tandem is not a registered Support at Home provider. Read FAQs for details.</p></a>
+          <a class="resource-card link-card" href="faq.html"><h3>DVA, private and Support at Home</h3><p>Private/self-funded referrals are accepted. DVA enquiries are welcome; service commencement is subject to confirmation of eligibility, referral requirements, billing arrangements and availability. Support at Home enquiries are welcome where services can be arranged through the participant’s registered provider, including under an applicable self-management arrangement.</p><p>Tandem is not a registered Support at Home provider. Read FAQs for details.</p></a>
           <a class="resource-card link-card" href="ndis-physiotherapy.html"><h3>NDIS physiotherapy</h3><p>Self-managed and plan-managed NDIS participants only. Tandem is not an NDIS-registered provider.</p></a>
-          <a class="resource-card link-card" href="icare-ltcs-physiotherapy.html"><h3>iCare / LTCS physiotherapy</h3><p>iCare/LTCS enquiries are welcome, with commencement subject to relevant scheme approval where required. NSW workers compensation referrals are subject to applicable insurer/scheme requirements.</p></a>
+          <a class="resource-card link-card" href="icare-ltcs-physiotherapy.html"><h3>iCare / LTCS physiotherapy</h3><p>iCare/LTCS enquiries are welcome, with commencement subject to relevant scheme approval where required. NSW workers compensation enquiries are welcome; service commencement is subject to confirmation of current SIRA approval, applicable insurer/scheme requirements and availability.</p></a>
         </div>
       </div>
     </section>
@@ -228,6 +247,9 @@
       <div class="container referral-content">
         <h2 id="contact-heading">Ready to discuss a referral?</h2>
         <p>Use the referral page for structured information, or call or email if you need to clarify suitability first. Please avoid including unnecessary sensitive information at the first enquiry stage.</p>
+        <h3>Operating hours</h3>
+        <p>Monday–Friday: 5:00 pm–8:30 pm<br />Saturday: 8:30 am–6:30 pm<br />Sunday: Closed</p>
+        <p>Times are local to Sydney. Appointments are subject to availability.</p>
         <div class="form-actions">
           <a href="refer.html" class="btn btn-light">Refer a client</a>
           <a href="mailto:referrals@tandemphysio.com.au" class="btn btn-secondary">Email an enquiry</a>
