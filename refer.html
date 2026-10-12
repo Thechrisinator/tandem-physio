@@ -26,11 +26,7 @@
       border-bottom: 6px solid #2A9D8F;
     }
 
-    .refer-hero h1,
-    .refer-hero h2,
-    .refer-hero h3 {
-      color: #ffffff;
-    }
+    .refer-hero h1 { color: #ffffff; }
 
     .refer-hero-grid {
       display: grid;
@@ -49,228 +45,38 @@
 
     .refer-panel h2 {
       font-size: 1.3rem;
-      color: #104563;
       margin-bottom: 12px;
     }
 
     .refer-panel h2::after { display: none; }
+    .refer-panel p { color: #5f6f73; }
 
-    .refer-panel p,
-    .refer-panel li {
-      color: #5f6f73;
-    }
-
-    .refer-panel ul {
-      list-style: none;
-      display: grid;
-      gap: 10px;
-      margin-top: 14px;
-    }
-
-    .refer-panel li {
-      position: relative;
-      padding-left: 26px;
-    }
-
-    .refer-panel li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: var(--accent-teal);
-      font-weight: 900;
-    }
-
-    .refer-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 330px;
-      gap: 28px;
-      align-items: start;
-    }
-
-    .form-card,
-    .refer-side-card {
-      background: #ffffff;
-      border: 1px solid rgba(16, 69, 99, 0.09);
-      border-radius: 18px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
-    }
-
-    .form-card {
-      overflow: hidden;
-    }
-
-    .form-card-header {
-      padding: 26px 28px;
-      border-bottom: 1px solid #e3e9e7;
-      background: #ffffff;
-    }
-
-    .form-card-header p {
-      color: #5f6f73;
-      margin-bottom: 0;
-    }
-
-    .form-card-header .form-actions {
-      margin-top: 18px;
-    }
+    .referral-embed { padding: 32px 0 48px; }
 
     #psforms-iframe {
+      display: block;
       width: 100%;
       border: 0;
-      display: block;
-      background: #ffffff;
     }
 
-    .refer-side-card {
-      padding: 24px;
-      position: sticky;
-      top: 110px;
-    }
-
-    .refer-side-card h3 {
-      margin-bottom: 12px;
-    }
-
-    .refer-side-card ul {
-      list-style: none;
-      display: grid;
-      gap: 11px;
-      margin-top: 12px;
-    }
-
-    .refer-side-card li {
-      color: #5f6f73;
-      position: relative;
-      padding-left: 26px;
-    }
-
-    .refer-side-card li::before {
-      content: "•";
-      position: absolute;
-      left: 3px;
-      top: 0;
-      color: var(--accent-teal);
-      font-weight: 900;
-      font-size: 1.3rem;
-      line-height: 1.1;
-    }
-
-    .refer-side-links {
-      display: grid;
-      gap: 10px;
-      margin-top: 14px;
-    }
-
-    .refer-side-links a {
-      color: #104563;
-      font-weight: 800;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    .fallback-box {
-      padding: 18px 28px 28px;
-      background: #f4f7f6;
-      border-top: 1px solid #e3e9e7;
-    }
-
-    .fallback-box p {
-      color: #5f6f73;
-      margin-bottom: 14px;
-    }
-
-    .pathway-section {
-      padding: 70px 0;
-      background: #ffffff;
-    }
-
-    .pathway-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 22px;
-      margin-top: 30px;
-      align-items: stretch;
-    }
-
-    .pathway-card {
-      background: #ffffff;
-      border: 1px solid rgba(16, 69, 99, 0.09);
-      border-top: 4px solid #2A9D8F;
-      border-radius: 16px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
-      padding: 26px;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .pathway-card h3 {
-      margin-bottom: 0;
-    }
-
-    .pathway-card-section {
-      border-top: 1px solid #e3e9e7;
-      padding-top: 13px;
-      display: grid;
-      gap: 6px;
-    }
-
-    .pathway-card p {
-      color: #5f6f73;
-      margin-bottom: 0;
-    }
-
-    .pathway-card-section strong {
-      color: #104563;
-      font-size: 0.82rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
-    .pathway-card a {
-      color: #104563;
-      font-weight: 800;
-      margin-top: auto;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    .pathway-card .btn {
-      align-self: flex-start;
-      color: #ffffff;
-      text-decoration: none;
-      margin-top: auto;
+    #check-suitability .privacy-note {
+      max-width: none;
+      margin-inline: 0;
+      text-align: left;
     }
 
     @media (max-width: 920px) {
-      .refer-hero-grid,
-      .refer-layout {
-        grid-template-columns: 1fr;
-      }
-
-      .refer-side-card {
-        position: static;
-      }
-
-      .pathway-grid {
-        grid-template-columns: 1fr;
-      }
+      .refer-hero-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 640px) {
-      .refer-hero {
-        padding: 54px 0;
-      }
+      .refer-hero { padding: 54px 0; }
     }
 
-    /* Keep PracSuite's privacy link inside the frame on 320px screens. */
     @media (max-width: 360px) {
-      #referral-form .container {
-        width: calc(100% - 4px);
-      }
+      #referral-form .container { width: calc(100% - 4px); }
     }
   </style>
-  <link rel="stylesheet" href="assets/visuals.css" />
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
@@ -300,184 +106,38 @@
       <div class="container refer-hero-grid">
         <div>
           <h1>Refer a client</h1>
-          <p class="hero-subtitle">
-            Use the referral form below for self-managed or plan-managed NDIS, iCare/LTCS, NSW workers compensation, DVA, Support at Home or private physiotherapy enquiries across Western Sydney and The Hills District. Tandem is not an NDIS-registered provider. Support at Home enquiries are welcome where services can be arranged through the participant’s registered provider, including under an applicable self-management arrangement; Tandem is not a registered Support at Home provider. iCare/LTCS service commencement is subject to relevant scheme approval where required. NSW workers compensation referrals are subject to applicable insurer/scheme requirements.
-          </p>
-          <div class="hero-actions">
-            <a href="#referral-form" class="btn">Make a formal referral</a>
-            <a href="#check-suitability" class="btn btn-secondary">Check suitability</a>
-          </div>
+          <p class="hero-subtitle">Participants, families, support coordinators, case managers and healthcare professionals can use the same PracSuite referral form.</p>
+          <p>We’ll review your referral and contact you to discuss the next steps. We aim to respond within 1 business day.</p>
         </div>
-
-        <aside class="refer-panel">
-          <h2>Before submitting</h2>
-          <p>You must be authorised to provide this referral information and, where required, have the participant’s consent to share it with Tandem Physio. We may verify authority before proceeding.</p>
-          <ul>
-            <li>Include the suburb and funding pathway.</li>
-            <li>Briefly describe the functional concern.</li>
-            <li>Avoid unnecessary sensitive information initially.</li>
-          </ul>
+        <aside class="refer-panel" aria-labelledby="referral-privacy-heading">
+          <h2 id="referral-privacy-heading">Before sharing information</h2>
+          <p>Provide only information needed for the referral. If referring someone else, you must be authorised and have their consent where required; we may verify authority.</p>
+          <p>Read the <a class="content-link" href="privacy.html#referral-collection-notice">referral collection notice</a> and <a class="content-link" href="privacy.html#privacy-policy">Privacy Policy</a>, and make the notice available to the person you’re referring.</p>
+          <p>Submitting a referral does not guarantee acceptance or an appointment.</p>
         </aside>
       </div>
     </section>
 
-    <section class="section-padding journey-section" aria-labelledby="journey-heading" data-visual-addition>
+    <section id="referral-form" class="referral-embed" aria-label="PracSuite referral form">
       <div class="container">
-        <p class="section-kicker">From enquiry to care</p>
-        <h2 id="journey-heading">How to get started</h2>
-        <p class="section-intro">Choose either starting option.</p>
-        <div class="referral-journey">
-          <ul class="journey-entries" role="list" aria-label="Two ways to get started">
-            <li class="journey-preliminary"><p class="journey-stage">Optional preliminary enquiry</p><h3>Not sure about suitability?</h3><a href="#check-suitability">Check suitability</a><p>No formal referral is needed to check suitability.</p></li>
-            <li><p class="journey-stage">Formal referral</p><h3>Ready to refer?</h3><a href="#referral-form">Make a referral</a><p>Provide only the information reasonably necessary to assess or progress this formal referral.</p></li>
-          </ul>
-          <ol class="journey-common" role="list" aria-label="Shared pathway after either starting option">
-            <li><p class="journey-stage">Response</p><h3>We aim to respond within 1 business day.</h3></li>
-            <li><p class="journey-stage">Where appropriate</p><h3>Initial assessment</h3></li>
-            <li><p class="journey-stage">As appropriate</p><h3>Ongoing plan / review</h3></li>
-          </ol>
+        <p>If the form does not load or you prefer a separate tab, <a class="content-link" href="https://tandemphysio.forms.pracsuite.com/t/25QzUp7bP3gyywLILMefzepi" target="_blank" rel="noopener">open the PracSuite referral form (new tab)</a>.</p>
+        <div id="psforms-iframe-container">
+          <iframe id="psforms-iframe" src="https://tandemphysio.forms.pracsuite.com/t/25QzUp7bP3gyywLILMefzepi" height="800" width="100%" title="Tandem Physio PracSuite referral form"></iframe>
+          <script type="application/javascript" src="https://tandemphysio.forms.pracsuite.com/static_js/embed-forms.js"></script>
+          <link type="text/css" rel="stylesheet" href="https://tandemphysio.forms.pracsuite.com/css/embed-forms.css" />
         </div>
-        <p class="visual-note">Submitting a referral does not guarantee acceptance or an appointment.</p>
       </div>
     </section>
 
     <section id="check-suitability" class="section-padding bg-light" aria-labelledby="suitability-heading">
       <div class="container">
         <div class="page-card">
-          <h2 id="suitability-heading">Check suitability before referring</h2>
-          <p>Not sure whether Tandem is the right fit? Participants, families and professionals can check suitability before making a formal referral.</p>
-          <p>For an initial enquiry, share only:</p>
-          <ul class="check-list">
-            <li>The suburb or general location.</li>
-            <li>The funding pathway, if known.</li>
-            <li>A brief functional reason for the enquiry, such as help with mobility or daily activities.</li>
-            <li>Your role in the enquiry, such as participant, family member or coordinator.</li>
-            <li>Your preferred return contact.</li>
-          </ul>
-          <p>You do not need to provide the participant’s full name, diagnosis, medical history or reports. Avoid unnecessary participant-identifying or sensitive clinical information. No formal referral is needed to check suitability.</p>
-          <p>Call <a href="tel:0410048142">0410 048 142</a> or email <a href="mailto:referrals@tandemphysio.com.au">referrals@tandemphysio.com.au</a>. Please keep email enquiries brief; email is not a secure clinical-record system.</p>
-          <p>Chris can discuss likely service fit and the next step with you. A suitability enquiry does not confirm clinical suitability, acceptance or an appointment.</p>
-          <p>Ready to refer? <a href="#referral-form">Make a formal referral</a>.</p>
+          <h2 id="suitability-heading">Not sure if Tandem Physio is suitable?</h2>
+          <p>Contact Chris to discuss your needs before submitting a referral.</p>
+          <p>Call <a href="tel:0410048142">0410 048 142</a> or email <a href="mailto:referrals@tandemphysio.com.au">referrals@tandemphysio.com.au</a>.</p>
+          <p class="privacy-note">For initial email enquiries, avoid identifiable clinical information or sensitive medical documents. Email is not a secure clinical-record system.</p>
+          <p>Services depend on clinical suitability, availability and confirmed funding or approval arrangements. See <a href="ndis-physiotherapy.html">NDIS eligibility</a>, <a href="icare-ltcs-physiotherapy.html">iCare/LTCS and workers compensation requirements</a>, or <a href="faq.html">DVA, Support at Home and private funding</a>.</p>
         </div>
-      </div>
-    </section>
-
-    <section class="pathway-section" aria-labelledby="pathway-heading">
-      <div class="container">
-        <div class="text-center">
-          <h2 id="pathway-heading">Preparing a formal referral</h2>
-          <p class="section-intro">The same referral form can be used by participants, families, coordinators, case managers and treating teams. Choose the pathway closest to the person making the referral.</p>
-        </div>
-        <div class="pathway-grid">
-          <article class="pathway-card">
-            <h3>Participant or family member</h3>
-            <div class="pathway-card-section">
-              <strong>Who this is for</strong>
-              <p>People seeking support for themselves, a family member or someone they help coordinate day to day.</p>
-            </div>
-            <div class="pathway-card-section">
-              <strong>Helpful information</strong>
-              <p>Suburb, funding pathway, main mobility or daily function concern, preferred contact person and any urgent safety issue.</p>
-            </div>
-            <div class="pathway-card-section">
-              <strong>Usually clarified next</strong>
-              <p>Service area, consent, availability, goals and whether mobile physiotherapy is likely to be suitable.</p>
-            </div>
-            <a href="#referral-form" class="btn">Continue to referral form</a>
-          </article>
-          <article class="pathway-card">
-            <h3>Support coordinator or case manager</h3>
-            <div class="pathway-card-section">
-              <strong>Who this is for</strong>
-              <p>Coordinators and case managers making a formal referral for physiotherapy, reporting or therapy support.</p>
-            </div>
-            <div class="pathway-card-section">
-              <strong>Helpful information</strong>
-              <p>Funding type, suburb, broad referral reason, urgency, known risks, consent status and whether reports or training may be needed.</p>
-            </div>
-            <div class="pathway-card-section">
-              <strong>Usually clarified next</strong>
-              <p>Referral suitability, communication preferences, approval requirements and the most useful first assessment focus.</p>
-            </div>
-            <a href="#referral-form" class="btn">Continue to referral form</a>
-          </article>
-          <article class="pathway-card">
-            <h3>Provider or treating professional</h3>
-            <div class="pathway-card-section">
-              <strong>Who this is for</strong>
-              <p>GPs, therapists, nurses, providers or treating teams seeking physiotherapy input for a shared client.</p>
-            </div>
-            <div class="pathway-card-section">
-              <strong>Helpful information</strong>
-              <p>Functional issue, relevant precautions, diagnosis context, current supports, equipment, key risks and consent to liaise.</p>
-            </div>
-            <div class="pathway-card-section">
-              <strong>Usually clarified next</strong>
-              <p>Role boundaries, communication needs, documentation requirements and whether the referral matches the mobile service scope.</p>
-            </div>
-            <a href="#referral-form" class="btn">Continue to referral form</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-padding bg-light" id="referral-form">
-      <div class="container refer-layout">
-        <div class="form-card">
-          <div class="form-card-header">
-            <h2>Formal referral form</h2>
-            <p>We aim to respond within 1 business day. If the embedded form is difficult to use on your device, open it directly in a new tab.</p>
-            <p>Patients can refer themselves, or an appropriately authorised third party can refer on their behalf. Information is submitted through PracSuite to help Tandem Physio assess enquiries and arrange physiotherapy services. Personal and health information is handled in accordance with our <a href="privacy.html">Privacy Policy</a>.</p>
-            <p>Provide only the information reasonably necessary to assess or progress this formal referral. Avoid unnecessary sensitive details or reports. Before using the form, read the <a href="privacy.html#referral-collection-notice">referral collection notice</a> and the <a href="privacy.html#privacy-policy">full Privacy Policy</a>. If referring someone else, please make the notice available to them.</p>
-            <p>Submitting a referral does not guarantee acceptance or an appointment.</p>
-            <div class="form-actions">
-              <a href="https://tandemphysio.forms.pracsuite.com/t/25QzUp7bP3gyywLILMefzepi" target="_blank" rel="noopener" class="btn">Open PracSuite referral form in a new tab</a>
-            </div>
-          </div>
-
-          <div id="psforms-iframe-container">
-              <iframe id="psforms-iframe" src="https://tandemphysio.forms.pracsuite.com/t/25QzUp7bP3gyywLILMefzepi" height="800px" width="100%" title="Tandem Physio PracSuite referral form"></iframe>
-              <script type="application/javascript" src="https://tandemphysio.forms.pracsuite.com/static_js/embed-forms.js"></script>
-              <link type="text/css" rel="stylesheet" href="https://tandemphysio.forms.pracsuite.com/css/embed-forms.css" />
-          </div>
-
-          <div class="fallback-box">
-            <p>If the embedded form does not load on your device, read the <a href="privacy.html#referral-collection-notice">referral collection notice</a> and use the fallback button below.</p>
-            <a href="https://tandemphysio.forms.pracsuite.com/t/25QzUp7bP3gyywLILMefzepi" target="_blank" rel="noopener" class="btn">Open PracSuite referral form in a new tab</a>
-          </div>
-        </div>
-
-        <aside class="refer-side-card">
-          <h3>Useful referral details</h3>
-          <ul>
-            <li>Client suburb and preferred contact person.</li>
-            <li>Funding type: self-managed or plan-managed NDIS, iCare/LTCS, NSW workers compensation, DVA, Support at Home or private.</li>
-            <li>Main reason for referral.</li>
-            <li>Current mobility, transfer, falls, respiratory or functional concern.</li>
-            <li>Known risks, urgency or access issues.</li>
-            <li>Whether a report, therapy block or training is required.</li>
-          </ul>
-
-          <div style="margin-top: 24px;">
-            <h3>Alternative contact</h3>
-            <p style="color: #5f6f73;">Not ready to make a formal referral? <a href="#check-suitability">Check suitability first</a>, with only brief, low-information details.</p>
-            <div class="form-actions">
-              <a href="mailto:referrals@tandemphysio.com.au" class="btn">Email</a>
-              <a href="tel:0410048142" class="btn">Call</a>
-            </div>
-          </div>
-
-          <div style="margin-top: 24px;">
-            <h3>Related information</h3>
-            <div class="refer-side-links" aria-label="Related referral information">
-              <a href="mobile-physiotherapy.html">Mobile physiotherapy and clinical approach</a>
-              <a href="faq.html">Referral FAQs</a>
-              <a href="privacy.html">Privacy Policy</a>
-              <a href="ndis-physiotherapy.html">NDIS physiotherapy information</a>
-              <a href="icare-ltcs-physiotherapy.html">iCare / LTCS physiotherapy information</a>
-            </div>
-          </div>
-        </aside>
       </div>
     </section>
   </main>

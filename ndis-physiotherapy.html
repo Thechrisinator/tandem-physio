@@ -143,29 +143,6 @@
   }
   .tp-tag.gold { background: rgba(233,196,106,.22); }
   .tp-path-card { padding: 28px; }
-  .tp-path-list { display: grid; gap: 14px; margin-top: 18px; }
-  .tp-path-item {
-    display: grid;
-    grid-template-columns: 42px 1fr;
-    gap: 14px;
-    align-items: start;
-    padding: 16px;
-    background: #f4f7f6;
-    border-radius: 14px;
-  }
-  .tp-num {
-    width: 36px; height: 36px; border-radius: 999px;
-    background: var(--accent-teal); color: #fff;
-    display: inline-flex; align-items: center; justify-content: center;
-    font-weight: 900;
-  }
-  .tp-num.gold { background: #E9C46A; color: #082f45; }
-  .tp-path-item strong { color: #104563; display: block; margin-bottom: 4px; }
-  .tp-box-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 24px; margin-top: 30px; }
-  .tp-box { padding: 28px; }
-  .tp-box ul { list-style: none; display: grid; gap: 12px; margin-top: 14px; }
-  .tp-box li { position: relative; padding-left: 28px; }
-  .tp-box li::before { content: "✓"; position: absolute; left: 0; color: var(--accent-teal); font-weight: 900; }
   .tp-faq { display: grid; gap: 14px; max-width: 920px; margin: 30px auto 0; }
   .tp-faq details { overflow: hidden; }
   .tp-faq summary {
@@ -287,22 +264,12 @@
     </section>
 
     <section class="tp-section bg-light">
-      <div class="container tp-pathway">
-        <aside class="tp-callout">
+      <div class="container">
+        <div class="tp-callout">
           <h2>Who we support</h2>
           <p class="section-intro">Adults with neurological, respiratory, mobility and complex disability-related physiotherapy needs.</p>
           <div class="tp-tags">
             <a class="tp-tag" href="stroke-physiotherapy.html">Stroke</a><a class="tp-tag" href="mnd-physiotherapy.html">MND</a><a class="tp-tag" href="spinal-cord-injury-physiotherapy.html">SCI</a><a class="tp-tag" href="abi-tbi-physiotherapy.html">ABI / TBI</a><a class="tp-tag" href="multiple-sclerosis-physiotherapy.html">MS</a><a class="tp-tag" href="parkinsons-physiotherapy.html">Parkinsonism</a><a class="tp-tag" href="falls-prevention-physiotherapy.html">Falls risk</a><a class="tp-tag" href="complex-chronic-pain-physiotherapy.html">Complex chronic pain</a>
-          </div>
-        </aside>
-        <div class="tp-path-card">
-          <h2>How the NDIS referral pathway works</h2>
-          <div class="tp-path-list">
-            <div class="tp-path-item"><span class="tp-num">1</span><div><strong>Referral or enquiry</strong><span>Referrer provides location, funding type, presenting concern and urgency.</span></div></div>
-            <div class="tp-path-item"><span class="tp-num">2</span><div><strong>Suitability check</strong><span>We confirm service area, availability, clinical fit, consent and funding pathway.</span></div></div>
-            <div class="tp-path-item"><span class="tp-num">3</span><div><strong>Initial assessment</strong><span>Assessment occurs at home or in the community so function and risk can be observed directly.</span></div></div>
-            <div class="tp-path-item"><span class="tp-num">4</span><div><strong>Plan and recommendations</strong><span>Therapy goals, carer education, equipment-related needs and reporting requirements are clarified.</span></div></div>
-            <div class="tp-path-item"><span class="tp-num">5</span><div><strong>Ongoing therapy or review</strong><span>Treatment, liaison, training, reporting or discharge planning continue as clinically appropriate.</span></div></div>
           </div>
         </div>
       </div>
@@ -310,25 +277,11 @@
 
     <section class="tp-section">
       <div class="container">
-        <div class="text-center">
-          <h2>Referral information that helps</h2>
-          <p class="section-intro">A good referral does not need to be long, but these details help determine suitability quickly.</p>
-        </div>
-        <div class="tp-box-grid">
-          <div class="tp-box"><h3>Useful referral details</h3><ul><li>Participant suburb and preferred contact person.</li><li>Funding type: plan-managed or self-managed.</li><li>Main functional concern or reason for referral.</li><li>Relevant diagnoses, mobility status and key risks.</li><li>Whether a report, therapy block, training or review is required.</li></ul></div>
-          <div class="tp-box"><h3>Common therapy goals</h3><ul><li>Improve safe transfers and daily mobility.</li><li>Reduce falls risk and improve confidence with movement.</li><li>Support carer and support-worker routines.</li><li>Monitor physical decline or changing neurological presentation.</li><li>Provide clear, function-linked recommendations.</li></ul></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="tp-section bg-light">
-      <div class="container">
         <div class="text-center"><h2>NDIS-specific FAQs</h2><p class="section-intro">Useful information for support coordinators, NDIS participants and referrers.</p></div>
         <div class="tp-faq">
           <details open><summary>Do you see plan-managed and self-managed NDIS participants?</summary><p>Yes. Tandem Physio can consider plan-managed and self-managed NDIS referrals where the referral is suitable and service arrangements can be confirmed.</p></details>
           <details><summary>Do you accept NDIA-managed participants?</summary><p>No. Tandem Physio is not an NDIS-registered provider and accepts self-managed and plan-managed participants only.</p></details>
           <details><summary>Can you provide NDIS-related reports?</summary><p>Yes, where clinically appropriate. Documentation can link impairments, activity limitations, participation restrictions, risk and therapy recommendations.</p></details>
-          <details><summary>What information helps with an NDIS referral?</summary><p>Useful starting details include suburb, plan-management type, reason for referral, functional concerns, consent status, urgency and key risks.</p></details>
         </div>
         <p class="privacy-note">For general referral questions, see the <a href="faq.html">FAQ page</a>.</p>
       </div>
