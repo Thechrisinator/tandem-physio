@@ -53,10 +53,30 @@ def main():
     assert 'Where appropriate' in common and 'As appropriate' in common
     assert 'Submitting a referral does not guarantee acceptance or an appointment.' in journey
 
+    embed_base = 'https://tandemphysio.forms.pracsuite.com/'
+    form_url = embed_base + 't/25QzUp7bP3gyywLILMefzepi'
+    tags = Visuals(referral).tags
+    frames = [attrs for tag, attrs in tags if tag == 'iframe']
+    assert len(frames) == 1, 'Referral page must have one embedded form'
+    assert frames[0].get('id') == 'psforms-iframe'
+    assert frames[0].get('src') == form_url
+    assert frames[0].get('title'), 'Embedded form needs an accessible title'
+    assert sum(attrs.get('id') == 'psforms-iframe-container' for _, attrs in tags) == 1
+    assert sum(tag == 'script' and attrs.get('src') == embed_base + 'static_js/embed-forms.js'
+               for tag, attrs in tags) == 1, 'Official resizing script must load once'
+    assert sum(tag == 'link' and attrs.get('href') == embed_base + 'css/embed-forms.css'
+               for tag, attrs in tags) == 1, 'Official embed stylesheet must load once'
+    fallback_links = [attrs for tag, attrs in tags if tag == 'a' and attrs.get('href') == form_url]
+    assert fallback_links, 'Direct form fallback must remain available'
+    assert all(attrs.get('target') == '_blank' and 'noopener' in attrs.get('rel', '').split()
+               for attrs in fallback_links)
+    assert 'docs.google.com/forms' not in referral and 'google-form-frame' not in referral
+    assert 'Google Forms' not in (ROOT / 'thanks.html').read_text()
+
     area = (ROOT / 'service-areas.html').read_text()
     assert 'Area guide — schematic, not a coverage boundary.' in area
     assert 'A listed suburb does not guarantee availability' in area
-    print('PASS: visual SVG accessibility/dimensions; two-entry, qualified referral pathway; schematic area disclaimer')
+    print('PASS: visual SVG accessibility/dimensions; qualified referral pathway; PracSuite embed and fallback; schematic area disclaimer')
 
 
 if __name__ == '__main__':

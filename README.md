@@ -42,8 +42,12 @@ metadata, canonical URLs, and core/related links on the seven new pages.
 When adding a substantive page, update `PAGES`, `sitemap.xml` and this inventory.
 Shared presentation remains in `assets/site.css`; no build step is required.
 
-The image and visual checks cover the existing homepage assets and reusable
-visual conventions. Browser checks are separate: use a local HTTP server and
+The image and visual checks cover the existing homepage assets, reusable
+visual conventions, and the PracSuite referral embed and direct fallback links.
+The supplied PracSuite embed has an accessible iframe title added; its script
+controls form height and page scrolling, without a fixed CSS height. PracSuite
+must allow the parent domain for embedding; the approved production domain is
+`tandemphysio.com.au`. Browser checks are separate: use a local HTTP server and
 review mobile, tablet and desktop layouts, menu behaviour, links and console
 errors before release. Changes on a draft PR are unpublished; GitHub Pages
 continues to deploy the repository root from `main`.
