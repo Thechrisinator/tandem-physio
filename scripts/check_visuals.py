@@ -3,7 +3,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PAGES = ('refer', 'clinical-focus', 'mobile-physiotherapy', 'service-areas', 'index', 'about')
+PAGES = ('clinical-focus', 'mobile-physiotherapy', 'service-areas', 'index', 'about')
 
 
 class Visuals(HTMLParser):
@@ -30,53 +30,46 @@ def main():
                 assert int(attrs['width']) > 0 and int(attrs['height']) > 0, name
 
     referral = (ROOT / 'refer.html').read_text()
-    journey = referral.split('id="journey-heading"', 1)[1].split('</section>', 1)[0]
-    tags = Visuals(journey).tags
-    assert [tag for tag, attrs in tags if attrs.get('class') == 'journey-entries'] == ['ul']
-    assert [tag for tag, attrs in tags if attrs.get('class') == 'journey-common'] == ['ol']
-    entries = journey.split('<ul class="journey-entries"', 1)[1].split('</ul>', 1)[0]
-    common = journey.split('<ol class="journey-common"', 1)[1].split('</ol>', 1)[0]
-    assert entries.count('<li') == 2 and common.count('<li') == 3
-    assert 'journey-number' not in journey, 'Starting options must not be numbered steps'
-    assert 'Choose either starting option.' in journey
-    assert 'Optional preliminary enquiry' in entries and 'Formal referral' in entries
-    assert 'Not sure about suitability?' in entries and 'Ready to refer?' in entries
-    # Both links belong to the alternative entries, not the ordered common steps.
-    assert 'href="#check-suitability"' in entries and 'href="#referral-form"' in entries
-    assert 'Check suitability' in entries and 'Make a referral' in entries
-    assert 'No formal referral is needed to check suitability.' in entries
-    assert 'Provide only the information reasonably necessary to assess or progress this formal referral.' in entries
-    assert 'href="#check-suitability"' not in common and 'href="#referral-form"' not in common
-    stages = ('We aim to respond within 1 business day.', 'Initial assessment', 'Ongoing plan / review')
-    positions = [common.index(stage) for stage in stages]
-    assert positions == sorted(positions)
-    assert 'Where appropriate' in common and 'As appropriate' in common
-    assert 'Submitting a referral does not guarantee acceptance or an appointment.' in journey
-
-    embed_base = 'https://tandemphysio.forms.pracsuite.com/'
-    form_url = embed_base + 't/25QzUp7bP3gyywLILMefzepi'
     tags = Visuals(referral).tags
+    form_url = 'https://tandemphysio.forms.pracsuite.com/t/25QzUp7bP3gyywLILMefzepi'
+    form_links = [attrs for tag, attrs in tags if tag == 'a' and attrs.get('href') == form_url]
+    assert len(form_links) == 1, 'Referral page must offer one PracSuite fallback link'
+    assert form_links[0].get('target') == '_blank'
+    assert 'noopener' in form_links[0].get('rel', '').split()
     frames = [attrs for tag, attrs in tags if tag == 'iframe']
-    assert len(frames) == 1, 'Referral page must have one embedded form'
+    assert len(frames) == 1, 'Referral page must embed one PracSuite form'
     assert frames[0].get('id') == 'psforms-iframe'
     assert frames[0].get('src') == form_url
     assert frames[0].get('title'), 'Embedded form needs an accessible title'
-    assert sum(attrs.get('id') == 'psforms-iframe-container' for _, attrs in tags) == 1
-    assert sum(tag == 'script' and attrs.get('src') == embed_base + 'static_js/embed-forms.js'
-               for tag, attrs in tags) == 1, 'Official resizing script must load once'
-    assert sum(tag == 'link' and attrs.get('href') == embed_base + 'css/embed-forms.css'
-               for tag, attrs in tags) == 1, 'Official embed stylesheet must load once'
-    fallback_links = [attrs for tag, attrs in tags if tag == 'a' and attrs.get('href') == form_url]
-    assert fallback_links, 'Direct form fallback must remain available'
-    assert all(attrs.get('target') == '_blank' and 'noopener' in attrs.get('rel', '').split()
-               for attrs in fallback_links)
-    assert 'docs.google.com/forms' not in referral and 'google-form-frame' not in referral
+    assert frames[0].get('width') == '100%'
+    assert 'scrolling' not in frames[0], 'Allow scrolling if the resize script is unavailable'
+    assert sum(attrs.get('id') == 'psforms-iframe-container' for tag, attrs in tags) == 1
+    assert sum(tag == 'script' and attrs.get('src') ==
+               'https://tandemphysio.forms.pracsuite.com/static_js/embed-forms.js'
+               for tag, attrs in tags) == 1
+    assert sum(tag == 'link' and attrs.get('href') ==
+               'https://tandemphysio.forms.pracsuite.com/css/embed-forms.css'
+               for tag, attrs in tags) == 1
+    ids = {attrs.get('id') for tag, attrs in tags}
+    assert {'referral-form', 'check-suitability'} <= ids, 'Existing referral anchors must work'
+    links = {attrs.get('href') for tag, attrs in tags if tag == 'a'}
+    assert {'privacy.html#referral-collection-notice', 'privacy.html#privacy-policy',
+            'mailto:referrals@tandemphysio.com.au', 'tel:0410048142'} <= links
+    assert 'Submitting a referral does not guarantee acceptance or an appointment.' in referral
+
+    for page in ROOT.glob('*.html'):
+        source = page.read_text()
+        assert 'docs.google.com/forms' not in source and 'forms.gle/' not in source, page.name
+        assert 'tandemphysionsw@gmail.com' not in source, page.name
+        tags = Visuals(source).tags
+        assert not any(attrs.get('class') in ('journey-entries', 'journey-common', 'tp-path-list')
+                       for tag, attrs in tags), page.name
     assert 'Google Forms' not in (ROOT / 'thanks.html').read_text()
 
     area = (ROOT / 'service-areas.html').read_text()
     assert 'Area guide — schematic, not a coverage boundary.' in area
     assert 'A listed suburb does not guarantee availability' in area
-    print('PASS: visual SVG accessibility/dimensions; qualified referral pathway; PracSuite embed and fallback; schematic area disclaimer')
+    print('PASS: visual accessibility; PracSuite embed, resizing assets and fallback; referral anchors/privacy links; no legacy forms or flows; area disclaimer')
 
 
 if __name__ == '__main__':

@@ -42,12 +42,15 @@ metadata, canonical URLs, and core/related links on the seven new pages.
 When adding a substantive page, update `PAGES`, `sitemap.xml` and this inventory.
 Shared presentation remains in `assets/site.css`; no build step is required.
 
-The image and visual checks cover the existing homepage assets, reusable
-visual conventions, and the PracSuite referral embed and direct fallback links.
-The supplied PracSuite embed has an accessible iframe title added; its script
-controls form height and page scrolling, without a fixed CSS height. PracSuite
-must allow the parent domain for embedding; the approved production domain is
-`tandemphysio.com.au`. Browser checks are separate: use a local HTTP server and
+The image and visual checks cover the homepage assets, reusable visual
+conventions, the PracSuite embed and fallback link, retained referral anchors and
+privacy links, and the absence of old form URLs and multi-step referral flows.
+The referral page embeds the existing referral-specific PracSuite URL using the
+official resizing script and stylesheet, with a secondary new-tab link. The
+PracSuite root URL asks for a form code and is not the referral destination.
+Embedding may require the approved parent domain, tandemphysio.com.au; a
+localhost restriction is not evidence that the form fails on that domain.
+Browser checks are separate: use a local HTTP server and
 review mobile, tablet and desktop layouts, menu behaviour, links and console
-errors before release. Changes on a draft PR are unpublished; GitHub Pages
-continues to deploy the repository root from `main`.
+errors before release. GitHub Pages deploys the repository root from `main`.
+Keep review changes local until the user explicitly approves remote changes.
