@@ -114,9 +114,8 @@
       margin-top: 18px;
     }
 
-    .google-form-frame {
+    #psforms-iframe {
       width: 100%;
-      height: 980px;
       border: 0;
       display: block;
       background: #ffffff;
@@ -253,10 +252,6 @@
         position: static;
       }
 
-      .google-form-frame {
-        height: 1050px;
-      }
-
       .pathway-grid {
         grid-template-columns: 1fr;
       }
@@ -266,9 +261,12 @@
       .refer-hero {
         padding: 54px 0;
       }
+    }
 
-      .google-form-frame {
-        height: 1150px;
+    /* Keep PracSuite's privacy link inside the frame on 320px screens. */
+    @media (max-width: 360px) {
+      #referral-form .container {
+        width: calc(100% - 4px);
       }
     }
   </style>
@@ -429,24 +427,23 @@
           <div class="form-card-header">
             <h2>Formal referral form</h2>
             <p>We aim to respond within 1 business day. If the embedded form is difficult to use on your device, open it directly in a new tab.</p>
+            <p>Patients can refer themselves, or an appropriately authorised third party can refer on their behalf. Information is submitted through PracSuite to help Tandem Physio assess enquiries and arrange physiotherapy services. Personal and health information is handled in accordance with our <a href="privacy.html">Privacy Policy</a>.</p>
             <p>Provide only the information reasonably necessary to assess or progress this formal referral. Avoid unnecessary sensitive details or reports. Before using the form, read the <a href="privacy.html#referral-collection-notice">referral collection notice</a> and the <a href="privacy.html#privacy-policy">full Privacy Policy</a>. If referring someone else, please make the notice available to them.</p>
             <p>Submitting a referral does not guarantee acceptance or an appointment.</p>
             <div class="form-actions">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeiC4yIpMpO-DbDx9PADVwjdlSIPEBOmPGL-0z3TUd7VoOfPg/viewform" target="_blank" rel="noopener" class="btn">Open form in new tab</a>
+              <a href="https://tandemphysio.forms.pracsuite.com/t/25QzUp7bP3gyywLILMefzepi" target="_blank" rel="noopener" class="btn">Open PracSuite referral form in a new tab</a>
             </div>
           </div>
 
-          <iframe
-            class="google-form-frame"
-            src="https://docs.google.com/forms/d/e/1FAIpQLSeiC4yIpMpO-DbDx9PADVwjdlSIPEBOmPGL-0z3TUd7VoOfPg/viewform?embedded=true"
-            title="Tandem Physio referral form"
-            loading="lazy">
-            Loading referral form…
-          </iframe>
+          <div id="psforms-iframe-container">
+              <iframe id="psforms-iframe" src="https://tandemphysio.forms.pracsuite.com/t/25QzUp7bP3gyywLILMefzepi" height="800px" width="100%" title="Tandem Physio PracSuite referral form"></iframe>
+              <script type="application/javascript" src="https://tandemphysio.forms.pracsuite.com/static_js/embed-forms.js"></script>
+              <link type="text/css" rel="stylesheet" href="https://tandemphysio.forms.pracsuite.com/css/embed-forms.css" />
+          </div>
 
           <div class="fallback-box">
             <p>If the embedded form does not load on your device, read the <a href="privacy.html#referral-collection-notice">referral collection notice</a> and use the fallback button below.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeiC4yIpMpO-DbDx9PADVwjdlSIPEBOmPGL-0z3TUd7VoOfPg/viewform" target="_blank" rel="noopener" class="btn">Open form in new tab</a>
+            <a href="https://tandemphysio.forms.pracsuite.com/t/25QzUp7bP3gyywLILMefzepi" target="_blank" rel="noopener" class="btn">Open PracSuite referral form in a new tab</a>
           </div>
         </div>
 
