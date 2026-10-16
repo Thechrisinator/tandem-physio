@@ -22,6 +22,8 @@ PAGES = (
     "parkinsons-physiotherapy.html",
     "falls-prevention-physiotherapy.html",
     "complex-chronic-pain-physiotherapy.html",
+    "hills-district-physiotherapy.html", "blacktown-physiotherapy.html",
+    "parramatta-physiotherapy.html",
 )
 UTILITY_PAGES = {"thanks.html", "404.html"}
 
@@ -154,6 +156,10 @@ def main():
                 fail(name, "metadata robots: require noindex, follow")
         if name not in PAGES:
             continue
+        for agent in ("robots", "googlebot", "bingbot"):
+            if any(re.search(r"\b(noindex|none)\b", value, re.I)
+                   for value in page.meta.get(agent, [])):
+                fail(name, f"metadata {agent}: substantive pages must allow indexing")
         canonical = DOMAIN + ("" if name == "index.html" else name)
         fields = {"title": page.titles, "canonical": page.canonicals}
         fields.update({key: page.meta.get(key, []) for key in (

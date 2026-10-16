@@ -3,52 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Physiotherapist-led mobile physiotherapy focused on neurological and complex disability across Western Sydney and The Hills District." />
+  <meta name="description" content="Mobile neurological and complex disability physiotherapy in Box Hill NSW, the Hills District and Western Sydney. Home visits subject to suitability and availability." />
   <meta name="theme-color" content="#104563" />
-  <title>Tandem Physio | Mobile Neuro & Complex Disability Physiotherapy</title>
+  <title>Mobile Neuro Physiotherapy Box Hill NSW &amp; Western Sydney | Tandem Physio</title>
   <link rel="canonical" href="https://tandemphysio.com.au/" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="stylesheet" href="assets/site.css" />
   <link rel="stylesheet" href="assets/home.css" />
-  <meta property="og:title" content="Tandem Physio | Mobile Neuro & Complex Disability Physiotherapy" />
-  <meta property="og:description" content="Mobile neurological and complex disability physiotherapy across Western Sydney and The Hills District." />
+  <meta property="og:title" content="Mobile Neuro Physiotherapy Box Hill NSW &amp; Western Sydney | Tandem Physio" />
+  <meta property="og:description" content="Mobile neurological and complex disability physiotherapy in Box Hill NSW, the Hills District and Western Sydney. Home visits subject to suitability and availability." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tandemphysio.com.au/" />
   <meta property="og:image" content="https://tandemphysio.com.au/assets/og-image.png" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    "name": "Tandem Physio",
-    "url": "https://tandemphysio.com.au/",
-    "image": "https://tandemphysio.com.au/assets/og-image.png",
-    "telephone": "+61410048142",
-    "email": "referrals@tandemphysio.com.au",
-    "areaServed": ["Western Sydney", "The Hills District", "Penrith", "Blacktown", "Parramatta", "Liverpool", "Fairfield"],
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "17:00",
-        "closes": "20:30"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "08:30",
-        "closes": "18:30"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Sunday",
-        "opens": "00:00",
-        "closes": "00:00"
-      }
-    ],
-    "address": { "@type": "PostalAddress", "addressRegion": "NSW", "addressCountry": "AU" }
-  }
-  </script>
   <link rel="stylesheet" href="assets/visuals.css" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://tandemphysio.com.au/#organisation",
+      "name": "Tandem Physio",
+      "url": "https://tandemphysio.com.au/",
+      "logo": "https://tandemphysio.com.au/assets/logo.jpg",
+      "image": "https://tandemphysio.com.au/assets/og-image.png",
+      "telephone": "+61410048142",
+      "email": "referrals@tandemphysio.com.au",
+      "description": "Mobile neurological and complex disability physiotherapy in Box Hill NSW, the Hills District and Western Sydney. Appointments are subject to availability and travel feasibility.",
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Box Hill NSW"
+        },
+        {
+          "@type": "Place",
+          "name": "The Hills District NSW"
+        },
+        {
+          "@type": "Place",
+          "name": "Western Sydney NSW"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Enquiries and referrals",
+        "telephone": "+61410048142",
+        "email": "referrals@tandemphysio.com.au",
+        "hoursAvailable": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "17:00",
+            "closes": "20:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:30",
+            "closes": "18:30"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://tandemphysio.com.au/#website",
+      "url": "https://tandemphysio.com.au/",
+      "name": "Tandem Physio",
+      "inLanguage": "en-AU",
+      "publisher": {
+        "@id": "https://tandemphysio.com.au/#organisation"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://tandemphysio.com.au/#mobile-physiotherapy",
+      "name": "Mobile neurological and complex disability physiotherapy",
+      "provider": {
+        "@id": "https://tandemphysio.com.au/#organisation"
+      },
+      "serviceType": "Mobile physiotherapy",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Western Sydney and the Hills District, NSW",
+        "description": "General service area from Glenorie in the north to Liverpool in the south, and Penrith in the west to Parramatta in the east. Boundary locations require exact-address travel confirmation."
+      },
+      "description": "Home and community visits, including Box Hill NSW. Availability depends on clinical suitability, funding, current capacity and travel feasibility.",
+      "url": "https://tandemphysio.com.au/mobile-physiotherapy.html"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://tandemphysio.com.au/#webpage",
+      "url": "https://tandemphysio.com.au/",
+      "name": "Mobile Neuro Physiotherapy Box Hill NSW & Western Sydney | Tandem Physio",
+      "description": "Mobile neurological and complex disability physiotherapy in Box Hill NSW, the Hills District and Western Sydney. Home visits subject to suitability and availability.",
+      "inLanguage": "en-AU",
+      "publisher": {
+        "@id": "https://tandemphysio.com.au/#organisation"
+      },
+      "about": {
+        "@id": "https://tandemphysio.com.au/#mobile-physiotherapy"
+      },
+      "isPartOf": {
+        "@id": "https://tandemphysio.com.au/#website"
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body class="home-page">
   <a href="#main" class="skip-link">Skip to main content</a>
@@ -76,7 +144,7 @@
     <section class="hero v2-hero" id="home">
       <div class="container hero-grid">
         <div class="hero-content">
-          <p class="hero-eyebrow">Western Sydney and The Hills District</p>
+          <p class="hero-eyebrow">Box Hill NSW, The Hills District and Western Sydney</p>
           <h1>Mobile neurological and complex disability physiotherapy across Western Sydney</h1>
           <p class="hero-subtitle">Home and community-based physiotherapy for people with neurological, respiratory, mobility and complex disability-related needs.</p>
           <div class="hero-actions">
@@ -96,10 +164,10 @@
             <h2 id="support-heading">Mobile physiotherapy with a clinical focus</h2>
             <p>Assessment, therapy, carer training and function-linked reports, guided by clinical need.</p>
           </div>
-          <div class="hero-referral-actions" aria-label="Homepage quick links">
+          <div class="hero-referral-actions" role="group" aria-label="Homepage quick links">
             <a href="clinical-focus.html">Clinical focus areas</a>
             <a href="mobile-physiotherapy.html">Clinical approach</a>
-            <a href="service-areas.html">View service areas</a>
+            <a href="service-areas.html#suburb-directory">Find your suburb</a>
           </div>
         </div>
       </div>
@@ -203,8 +271,9 @@
           </div>
         </div>
         <div class="highlight-box area-snapshot">
-          <h3>Commonly considered areas</h3>
+          <h3>Box Hill NSW and surrounding areas</h3>
           <p>Penrith, Blacktown, Parramatta, Liverpool, Fairfield and The Hills District.</p>
+          <p>Our general service area extends from Glenorie in the north to Liverpool in the south, and Penrith in the west to Parramatta in the east. <a class="content-link" href="hills-district-physiotherapy.html">Explore visits in Box Hill and the Hills District</a> or <a class="content-link" href="service-areas.html#suburb-directory">search your suburb</a>. Appointments are subject to availability and travel feasibility.</p>
         </div>
       </div>
     </section>
@@ -225,7 +294,7 @@
     </section>
   </main>
 
-  <div class="mobile-cta-bar" aria-label="Quick referral actions">
+  <div class="mobile-cta-bar" role="group" aria-label="Quick referral actions">
     <a href="refer.html">Refer</a>
     <a href="tel:0410048142">Call</a>
   </div>
@@ -234,7 +303,7 @@
     <div class="container">
       <h3>Tandem Physio</h3>
       <p class="footer-lede">Mobile neurological and complex disability physiotherapy across Western Sydney and The Hills District.</p>
-      <div class="footer-grid" aria-label="Footer navigation">
+      <div class="footer-grid" role="navigation" aria-label="Footer navigation">
         <div class="footer-column">
           <h4>Services</h4>
           <ul>

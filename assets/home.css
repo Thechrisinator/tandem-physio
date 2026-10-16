@@ -25,7 +25,7 @@
 }
 
 .home-page .hero h1 {
-  color: var(--primary-navy);
+  color: #000;
   font-size: clamp(2rem, 3.5vw, 3.1rem);
   line-height: 1.12;
   letter-spacing: -0.035em;
