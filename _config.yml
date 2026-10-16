@@ -1,0 +1,5 @@
+# Keep repository maintenance files out of the GitHub Pages site.
+exclude:
+  - docs
+  - scripts
+  - README.md

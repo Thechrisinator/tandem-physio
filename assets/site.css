@@ -51,7 +51,7 @@
     }
 
     h1, h2, h3, h4 {
-      color: var(--primary-navy);
+      color: #000;
       line-height: 1.2;
       margin-bottom: 1rem;
     }
@@ -283,7 +283,7 @@
     .hero h1,
     .hero h2,
     .hero h3 {
-      color: var(--white);
+      color: #000;
     }
 
     .hero-subtitle {
@@ -348,7 +348,7 @@
     }
 
     .hero-referral-content h2 {
-      color: var(--primary-navy);
+      color: #000;
       font-size: 1.25rem;
       padding-bottom: 0;
       margin-bottom: 8px;
@@ -627,7 +627,7 @@
       font-size: 0.84rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: var(--primary-navy);
+      color: #000;
       border-bottom: 1px solid var(--mid-gray);
       padding-bottom: 8px;
       margin-top: 22px;
@@ -658,7 +658,7 @@
     .referral-content h2,
     .referral-content h3,
     .referral-content h4 {
-      color: var(--white);
+      color: #000;
     }
 
     .referral-content h2::after {
@@ -685,7 +685,7 @@
     }
 
     .referral-item h4 {
-      color: var(--accent-gold);
+      color: #000;
       margin-bottom: 9px;
     }
 
@@ -838,7 +838,7 @@
     }
 
     footer h3 {
-      color: var(--primary-navy);
+      color: #000;
       font-size: 1.45rem;
       margin-bottom: 6px;
     }
@@ -856,7 +856,7 @@
     }
 
     .footer-column h4 {
-      color: var(--primary-navy);
+      color: #000;
       font-size: 0.98rem;
       margin-bottom: 12px;
     }
@@ -1132,7 +1132,7 @@ footer a {
 .simple-page-hero h1,
 .simple-page-hero h2,
 .simple-page-hero h3 {
-  color: var(--white);
+  color: #000;
 }
 
 .simple-page-hero h2::after {
@@ -1434,7 +1434,7 @@ body :is(.simple-page-hero, .tp-hero, .refer-hero) {
 }
 
 body :is(.simple-page-hero, .tp-hero, .refer-hero) :is(h1, h2, h3) {
-  color: var(--primary-navy);
+  color: #000;
 }
 
 body :is(.simple-page-hero, .tp-hero, .refer-hero) h1 {
@@ -1573,7 +1573,7 @@ body :is(.tp-cta, .referral-content) {
   border-radius: 0;
   box-shadow: none;
 }
-body :is(.tp-cta, .referral-content) :is(h2, h3, h4) { color: var(--primary-navy); }
+body :is(.tp-cta, .referral-content) :is(h2, h3, h4) { color: #000; }
 body :is(.tp-cta, .referral-content) p { color: var(--text-muted); }
 body .referral-content[data-reveal] { opacity: 1; transform: none; transition: none; }
 body :is(.tp-cta, .referral-content) .btn { transform: none; transition: none; }
@@ -1643,3 +1643,21 @@ summary:focus-visible {
   body { padding-bottom: 0; }
   html { scroll-padding: 12px; }
 }
+
+body :is(h1, h2, h3, h4) a.content-link { color: inherit; }
+
+.breadcrumbs { font-size: 0.9rem; margin-bottom: 24px; }
+.breadcrumbs a { text-decoration: underline; text-underline-offset: 3px; }
+.directory-controls { margin: 24px 0; max-width: 640px; }
+.directory-controls label { display: block; font-weight: 700; margin-bottom: 8px; }
+.directory-search-row { display: flex; gap: 12px; flex-wrap: wrap; }
+.directory-search-row input { flex: 1 1 240px; min-width: 0; width: 100%; padding: 12px; font: inherit; border: 1px solid var(--text-muted); border-radius: 6px; }
+.directory-count { margin: 12px 0 0; }
+.suburb-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 28px; margin: 24px 0; padding: 0; }
+.suburb-list li { padding: 10px 0; border-bottom: 1px solid var(--mid-gray); }
+.suburb-list small { display: block; color: var(--text-muted); }
+.suburb-list [hidden], .directory-controls[hidden], [data-directory-empty][hidden] { display: none; }
+@media (max-width: 880px) { .suburb-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 540px) { .suburb-list { grid-template-columns: 1fr; } }
+
+.directory-search-row button { font: inherit; }
